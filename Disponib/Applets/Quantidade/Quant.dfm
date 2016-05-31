@@ -1,0 +1,949 @@
+object Form1: TForm1
+  Left = 207
+  Top = 151
+  Width = 582
+  Height = 338
+  Caption = 'Dados de Vazão - Versão Access 97'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 48
+    Width = 137
+    Height = 257
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -8
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgMultiSelect]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'dia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Data'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 49
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'vazao'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Vazão'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -11
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 57
+        Visible = True
+      end>
+  end
+  object Graf_SerieTemporal: TDBChart
+    Left = 152
+    Top = 49
+    Width = 361
+    Height = 256
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Text.Strings = (
+      '')
+    LeftAxis.AxisValuesFormat = '#,###,##'
+    LeftAxis.LabelsOnAxis = False
+    LeftAxis.LabelsSeparation = 20
+    LeftAxis.Title.Caption = 'Vazão (m3/s)'
+    LeftAxis.Title.Font.Charset = ANSI_CHARSET
+    LeftAxis.Title.Font.Name = 'Tahoma'
+    LeftAxis.Title.Font.Style = [fsBold]
+    Legend.Visible = False
+    View3D = False
+    View3DWalls = False
+    Zoom.AnimatedSteps = 4
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    Color = clWhite
+    TabOrder = 1
+    OnDblClick = Graf_SerieTemporalDblClick
+    object Series1: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      DataSource = SelecionaTripaEstacaoDesejada
+      PercentFormat = '##0,## %'
+      SeriesColor = 10485760
+      ValueFormat = '#,###,##'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = True
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      XValues.ValueSource = 'DIA'
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      YValues.ValueSource = 'VAZAO'
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 574
+    Height = 41
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 8
+      Top = 8
+      Width = 124
+      Height = 13
+      Caption = 'Estação Fluviométrica'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object DBText1: TDBText
+      Left = 144
+      Top = 8
+      Width = 145
+      Height = 17
+      DataField = 'NOME'
+      DataSource = DataSource1
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 512
+    Top = 24
+    Width = 49
+    Height = 249
+    BevelOuter = bvNone
+    TabOrder = 3
+    object Alto: TSpeedButton
+      Left = 8
+      Top = 104
+      Width = 32
+      Height = 22
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000C40E0000C40E00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333444333
+        3333333333777F33333333333344433333333333337F7F333333333333444333
+        33333333337F7F33333333333344433333333333337F7F333333333333444333
+        33333333337F7F33333333333344433333333333FF7F7FFFF333333444444444
+        3333333777737777F333333444444444333333373F3333373333333344444443
+        333333337F33337F33333333444444433333333373F333733333333334444433
+        3333333337F337F3333333333444443333333333373F37333333333333444333
+        33333333337F7F33333333333344433333333333337373333333333333343333
+        333333333337F333333333333334333333333333333733333333}
+      NumGlyphs = 2
+      OnClick = AltoClick
+    end
+    object Esquerda: TSpeedButton
+      Left = 8
+      Top = 56
+      Width = 32
+      Height = 22
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000C40E0000C40E00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333FF3333333333333443333333333333F77F33333333333444433
+        333333333F7737F333333333444444333333333F773337FFFFFF334444444444
+        44443F773333377777774444444444444444773FF33333FFFFF7334444444444
+        444433773FF33777777733334444443333333333773FF7F33333333333444433
+        33333333337737F3333333333333443333333333333377333333333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333}
+      NumGlyphs = 2
+      OnClick = EsquerdaClick
+    end
+    object Baixo: TSpeedButton
+      Left = 8
+      Top = 128
+      Width = 32
+      Height = 22
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000C40E0000C40E00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333343333
+        333333333337F33333333333333433333333333333373F333333333333444333
+        33333333337F7F33333333333344433333333333337373F33333333334444433
+        3333333337F337F33333333334444433333333333733373F3333333344444443
+        333333337F33337F33333333444444433333333373333373F333333444444444
+        33333337FFFF3FF7F33333344444444433333337777F77773333333333444333
+        33333333337F7F33333333333344433333333333337F7F333333333333444333
+        33333333337F7F33333333333344433333333333337F7F333333333333444333
+        33333333337F7F33333333333344433333333333337773333333}
+      NumGlyphs = 2
+      OnClick = BaixoClick
+    end
+    object Direita: TSpeedButton
+      Left = 8
+      Top = 80
+      Width = 32
+      Height = 22
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000C40E0000C40E00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333333333333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333FF3333333333333443333
+        3333333333773FF3333333333344443333333333337F773FF333333333444444
+        33333FFFFF7F33773FF34444444444444433777777733333773F444444444444
+        44447FFFFFFF33333F7744444444444444337777777F333F7733333333444444
+        33333333337F3F77333333333344443333333333337F77333333333333443333
+        3333333333773333333333333333333333333333333333333333333333333333
+        3333333333333333333333333333333333333333333333333333}
+      NumGlyphs = 2
+      OnClick = DireitaClick
+    end
+    object ZoomIn: TBitBtn
+      Left = 8
+      Top = 160
+      Width = 32
+      Height = 22
+      TabOrder = 0
+      OnClick = ZoomInClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000C40E0000C40E00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        33033333333333333F7F3333333333333000333333333333F777333333333333
+        000333333333333F777333333333333000333333333333F77733333333333300
+        033333333FFF3F777333333700073B703333333F7773F77733333307777700B3
+        33333377333777733333307F8F8F7033333337F333F337F3333377F8F0F8F773
+        3333373337F3373F3333078F808F870333337F33F7FFF37F333307F00000F703
+        33337F377777337F3333078F808F8703333373F337F33373333377F8F0F8F773
+        333337F3373337F33333307F8F8F70333333373FF333F7333333330777770333
+        333333773FF77333333333370007333333333333777333333333}
+      NumGlyphs = 2
+    end
+    object ZoomOut: TBitBtn
+      Left = 8
+      Top = 184
+      Width = 32
+      Height = 22
+      TabOrder = 1
+      OnClick = ZoomOutClick
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000C40E0000C40E00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        33033333333333333F7F3333333333333000333333333333F777333333333333
+        000333333333333F777333333333333000333333333333F77733333333333300
+        033333333FFF3F777333333700073B703333333F7773F77733333307777700B3
+        333333773337777333333078F8F87033333337F3333337F33333778F8F8F8773
+        333337333333373F333307F8F8F8F70333337F33FFFFF37F3333078000008703
+        33337F377777337F333307F8F8F8F703333373F3333333733333778F8F8F8773
+        333337F3333337F333333078F8F870333333373FF333F7333333330777770333
+        333333773FF77333333333370007333333333333777333333333}
+      NumGlyphs = 2
+    end
+    object Volta: TButton
+      Left = 8
+      Top = 216
+      Width = 32
+      Height = 22
+      Caption = 'Volta'
+      TabOrder = 2
+      OnClick = VoltaClick
+    end
+  end
+  object Database1: TDatabase
+    AliasName = 'Hidro99'
+    DatabaseName = 'Dados de Vazão'
+    LoginPrompt = False
+    SessionName = 'Default'
+    Left = 336
+    Top = 8
+  end
+  object DdeClientConv1: TDdeClientConv
+    Left = 304
+    Top = 8
+  end
+  object SelecionaTripaEstacaoDesejada: TQuery
+    DatabaseName = 'Dados de Vazão'
+    SQL.Strings = (
+      
+        'SELECT Estacao.Nome, Vazoes.data AS dia,  Vazoes.vazao01 AS vaza' +
+        'o  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+1) AS dia,  vazoes.vazao' +
+        '02 AS vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+2) AS dia,  vazoes.vazao' +
+        '03 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+3) AS dia, vazoes.vazao0' +
+        '4 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+4) AS dia, vazoes.vazao0' +
+        '5 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+5) AS dia, vazoes.vazao0' +
+        '6 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+6) AS dia, vazoes.vazao0' +
+        '7 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+7) AS dia, vazoes.vazao0' +
+        '8 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+8) AS dia, vazoes.vazao0' +
+        '9 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+9) AS dia, vazoes.vazao1' +
+        '0 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+10) AS dia, vazoes.vazao' +
+        '11 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+11) AS dia, vazoes.vazao' +
+        '12 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+12) AS dia, vazoes.vazao' +
+        '13 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+13) AS dia, vazoes.vazao' +
+        '14 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+14) AS dia, vazoes.vazao' +
+        '15 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+15) AS dia, vazoes.vazao' +
+        '16 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+16) AS dia, vazoes.vazao' +
+        '17 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+17) AS dia,  vazoes.vaza' +
+        'o18 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+18) AS dia,  vazoes.vaza' +
+        'o19 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+19) AS dia, vazoes.vazao' +
+        '20 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+20) AS dia, vazoes.vazao' +
+        '21 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+21) AS dia, vazoes.vazao' +
+        '22 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+22) AS dia, vazoes.vazao' +
+        '23 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+23) AS dia, vazoes.vazao' +
+        '24 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+24) AS dia, vazoes.vazao' +
+        '25 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+25) AS dia, vazoes.vazao' +
+        '26 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+26) AS dia, vazoes.vazao' +
+        '27 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+27) AS dia, vazoes.vazao' +
+        '28 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+28) AS dia,  vazoes.vaza' +
+        'o29 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      'AND   (MONTH(vazoes.data)<>2)'
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+28) AS dia,  vazoes.vaza' +
+        'o29 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      'AND   (MONTH(vazoes.data)=2) '
+      'AND   (INT(YEAR(vazoes.data)/4)=YEAR(vazoes.data)/4)'
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+29) AS dia, vazoes.vazao' +
+        '30 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      'AND  (MONTH(vazoes.data)<>2)'
+      ''
+      ''
+      
+        'UNION SELECT estacao.nome, (vazoes.data+30) AS dia, vazoes.vazao' +
+        '31 as vazao  '
+      'FROM Vazoes, Estacao'
+      
+        'WHERE (((Estacao.Codigo)=:codigo) AND ((Vazoes.EstacaoCodigo)=:c' +
+        'odigo)) '
+      'AND  (MONTH(vazoes.data)<>2)'
+      'and    (MONTH(vazoes.data)<>4)'
+      'and    (MONTH(vazoes.data)<>6)'
+      'and    (MONTH(vazoes.data)<>9)'
+      'and    (MONTH(vazoes.data)<>11);'
+      ''
+      ''
+      '')
+    Left = 368
+    Top = 9
+    ParamData = <
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+        Value = 58525000
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end>
+    object SelecionaTripaEstacaoDesejadadia: TDateTimeField
+      FieldName = 'dia'
+    end
+    object SelecionaTripaEstacaoDesejadavazao: TFloatField
+      FieldName = 'vazao'
+      DisplayFormat = ',###.#'
+    end
+    object SelecionaTripaEstacaoDesejadaNome: TStringField
+      FieldName = 'Nome'
+      Size = 255
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = SelecionaTripaEstacaoDesejada
+    Left = 400
+    Top = 8
+  end
+end

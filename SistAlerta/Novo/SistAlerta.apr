@@ -1,0 +1,3804 @@
+/3.2
+(ODB.1
+	FirstRootClassName:	"Project"
+	Roots:	2
+	Version:	32
+)
+
+(Project.2
+	Name:	"SistAlerta.apr"
+	CreationDate:	"segunda-feira, 01 de março de 2004 15:42:34"
+	GUIName:	"Project"
+	Win:	3
+	CSMgr:	4
+	DocExts:	5
+	VisGUIWidth:	70
+	Doc:	6
+	Doc:	232
+	Doc:	385
+	Doc:	137
+	Doc:	348
+	Doc:	406
+	Doc:	410
+	Doc:	421
+	Doc:	425
+	Doc:	84
+	Doc:	437
+	ActiveDoc:	84
+	Buttons:	447
+	Buttons:	448
+	Buttons:	449
+	Scripts:	450
+	Prefs:	451
+	WorkDir:	1279
+	WinX:	-4
+	WinY:	-3
+	WinW:	1032
+	WinH:	775
+	SerialNumber:	"911111111111"
+	SelColor:	1280
+	GUINames:	1281
+	GUINames:	1282
+	GUINames:	1283
+	GUINames:	1284
+	GUINames:	1285
+	GUINames:	1286
+	GUINames:	1287
+	TocWidthScale:	1.00000000000000
+)
+
+(DocWin.3
+	Owner:	2
+	Open:	1
+	X:	5
+	Y:	5
+	W:	335
+	H:	312
+)
+
+(CSMgr.4
+)
+
+(DocAct.5
+	Doc:	2
+)
+
+(Table.6
+	Name:	"Attributes of Captações nos Rios"
+	CreationDate:	"sexta-feira, 16 de abril de 2004 13:39:48"
+	GUIName:	"Table"
+	Win:	7
+	CSMgr:	8
+	DocExts:	384
+	VTab:	38
+)
+
+(DocWin.7
+	Owner:	6
+	X:	-4
+	Y:	-4
+	W:	1034
+	H:	671
+)
+
+(CSMgr.8
+	Client:	9
+)
+
+(CSClient.9
+	Client:	10
+	ReqName:	"RespondTable"
+)
+
+(FTheme.10
+	Name:	"Captações nos Rios"
+	Source:	11
+	Flags:	0x06
+	Legend:	64
+	Threshold:	83
+	View:	84
+	GSet:	382
+	LegEditScript:	"View.EditLegend"
+	TxPos:	383
+	LabelField:	44
+	Table:	6
+	SnapTolCursor:	1
+)
+
+(XYSrc.11
+	Name:	12
+	FTab:	38
+	XField:	53
+	YField:	54
+)
+
+(XYName.12
+	Name:	"captvaz.dbf"
+	OwnerClass:	"XYSrc"
+	VTab:	13
+	XField:	28
+	YField:	29
+)
+
+(VTab.13
+	Name:	"captvaz.dbf"
+	BTab:	14
+	Fields:	15
+	Fields:	16
+	Fields:	17
+	Fields:	18
+	Fields:	19
+	Fields:	20
+	Fields:	21
+	Fields:	22
+	Fields:	23
+	Fields:	24
+	Fields:	25
+	Fields:	26
+	Fields:	27
+	Fields:	28
+	Fields:	29
+	Fields:	30
+	Fields:	31
+	Fields:	32
+	Fields:	33
+	Fields:	34
+	Fields:	35
+	SelBits:	37
+)
+
+(dBASE.14
+	Name:	"captvaz.dbf"
+	Fields:	15
+	Fields:	16
+	Fields:	17
+	Fields:	18
+	Fields:	19
+	Fields:	20
+	Fields:	21
+	Fields:	22
+	Fields:	23
+	Fields:	24
+	Fields:	25
+	Fields:	26
+	Fields:	27
+	Fields:	28
+	Fields:	29
+	Fields:	30
+	Fields:	31
+	Fields:	32
+	Fields:	33
+	Fields:	34
+	Fields:	35
+	FileName:	36
+)
+
+(Field.15
+	Name:	"Id_unico"
+	Btab:	14
+	Alias:	"Id_unico"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.16
+	Name:	"Id_declara"
+	Btab:	14
+	Alias:	"Id_declara"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.17
+	Name:	"Id_empreen"
+	Btab:	14
+	Alias:	"Id_empreen"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.18
+	Name:	"Id_captaca"
+	Btab:	14
+	Alias:	"Id_captaca"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.19
+	Name:	"Tipo"
+	Btab:	14
+	Alias:	"Tipo"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.20
+	Name:	"Id_tip_cap"
+	Btab:	14
+	Alias:	"Id_tip_cap"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.21
+	Name:	"X"
+	Btab:	14
+	Alias:	"X"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.22
+	Name:	"Y"
+	Btab:	14
+	Alias:	"Y"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.23
+	Name:	"Id_crp_hid"
+	Btab:	14
+	Alias:	"Id_crp_hid"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.24
+	Name:	"Ch_n_encon"
+	Btab:	14
+	Alias:	"Ch_n_encon"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	66
+)
+
+(Field.25
+	Name:	"Nome_ch"
+	Btab:	14
+	Alias:	"Nome_ch"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.26
+	Name:	"Nome"
+	Btab:	14
+	Alias:	"Nome"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.27
+	Name:	"Disttrecho"
+	Btab:	14
+	Alias:	"Disttrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.28
+	Name:	"Xtrecho"
+	Btab:	14
+	Alias:	"Xtrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.29
+	Name:	"Ytrecho"
+	Btab:	14
+	Alias:	"Ytrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.30
+	Name:	"Rio"
+	Btab:	14
+	Alias:	"Rio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.31
+	Name:	"Ponto"
+	Btab:	14
+	Alias:	"Ponto"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.32
+	Name:	"Nomerio"
+	Btab:	14
+	Alias:	"Nomerio"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.33
+	Name:	"Numnome"
+	Btab:	14
+	Alias:	"Numnome"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.34
+	Name:	"Cap_md_est"
+	Btab:	14
+	Alias:	"Cap_md_est"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	65
+)
+
+(Field.35
+	Name:	"Vazmed"
+	Btab:	14
+	Alias:	"Vazmed"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.36
+	Path:	"c:/paraiba/sistalerta/captvaz.dbf"
+)
+
+(Bitmap.37
+	NumBits:	163
+
+)
+
+(FTab.38
+	Name:	"captvaz.dbf"
+	BTab:	39
+	Fields:	62
+	Fields:	40
+	Fields:	41
+	Fields:	42
+	Fields:	43
+	Fields:	44
+	Fields:	45
+	Fields:	46
+	Fields:	47
+	Fields:	48
+	Fields:	49
+	Fields:	50
+	Fields:	51
+	Fields:	52
+	Fields:	53
+	Fields:	54
+	Fields:	55
+	Fields:	56
+	Fields:	57
+	Fields:	58
+	Fields:	59
+	Fields:	60
+	SelBits:	63
+	FSrc:	11
+)
+
+(dBASE.39
+	Name:	"captvaz.dbf"
+	Fields:	40
+	Fields:	41
+	Fields:	42
+	Fields:	43
+	Fields:	44
+	Fields:	45
+	Fields:	46
+	Fields:	47
+	Fields:	48
+	Fields:	49
+	Fields:	50
+	Fields:	51
+	Fields:	52
+	Fields:	53
+	Fields:	54
+	Fields:	55
+	Fields:	56
+	Fields:	57
+	Fields:	58
+	Fields:	59
+	Fields:	60
+	FileName:	61
+)
+
+(Field.40
+	Name:	"Id_unico"
+	Btab:	39
+	Alias:	"Id_unico"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.41
+	Name:	"Id_declara"
+	Btab:	39
+	Alias:	"Id_declara"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.42
+	Name:	"Id_empreen"
+	Btab:	39
+	Alias:	"Id_empreen"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.43
+	Name:	"Id_captaca"
+	Btab:	39
+	Alias:	"Id_captaca"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.44
+	Name:	"Tipo"
+	Btab:	39
+	Alias:	"Tipo"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.45
+	Name:	"Id_tip_cap"
+	Btab:	39
+	Alias:	"Id_tip_cap"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.46
+	Name:	"X"
+	Btab:	39
+	Alias:	"X"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.47
+	Name:	"Y"
+	Btab:	39
+	Alias:	"Y"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.48
+	Name:	"Id_crp_hid"
+	Btab:	39
+	Alias:	"Id_crp_hid"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.49
+	Name:	"Ch_n_encon"
+	Btab:	39
+	Alias:	"Ch_n_encon"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	66
+)
+
+(Field.50
+	Name:	"Nome_ch"
+	Btab:	39
+	Alias:	"Nome_ch"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.51
+	Name:	"Nome"
+	Btab:	39
+	Alias:	"Nome"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.52
+	Name:	"Disttrecho"
+	Btab:	39
+	Alias:	"Disttrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.53
+	Name:	"Xtrecho"
+	Btab:	39
+	Alias:	"Xtrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.54
+	Name:	"Ytrecho"
+	Btab:	39
+	Alias:	"Ytrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.55
+	Name:	"Rio"
+	Btab:	39
+	Alias:	"Rio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.56
+	Name:	"Ponto"
+	Btab:	39
+	Alias:	"Ponto"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.57
+	Name:	"Nomerio"
+	Btab:	39
+	Alias:	"Nomerio"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.58
+	Name:	"Numnome"
+	Btab:	39
+	Alias:	"Numnome"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.59
+	Name:	"Cap_md_est"
+	Btab:	39
+	Alias:	"Cap_md_est"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	65
+)
+
+(Field.60
+	Name:	"Vazmed"
+	Btab:	39
+	Alias:	"Vazmed"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.61
+	Path:	"c:/paraiba/sistalerta/captvaz.dbf"
+)
+
+(Field.62
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	17
+	Order:	-1
+	Pixels:	41
+)
+
+(Bitmap.63
+	NumBits:	163
+
+)
+
+(Legend.64
+	LegType:	0x01
+	ClassType:	0x03
+	Symbols:	65
+	Class:	73
+	StdDevs:	1.00000000000000
+	NullSym:	74
+	NullValues:	81
+	StatValues:	82
+	Precision:	-3
+)
+
+(SymList.65
+	Child:	66
+)
+
+(BMkSym.66
+	Color:	67
+	BgColor:	68
+	Font:	69
+	Size:	8.00000000000000
+	Pattern:	35
+	Angle:	360.00000000000000
+)
+
+(TClr.67
+	Red:	0x8060
+	Green:	0x376
+	Blue:	0x4284
+)
+
+(TClr.68
+	Name:	"Transparent"
+)
+
+(NFont.69
+	Family:	70
+	Name:	71
+	Style:	72
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.70
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.71
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.72
+	S:	"Normal"
+)
+
+(LClass.73
+	IsText:	1
+	Precision:	-3
+)
+
+(BMkSym.74
+	Color:	75
+	BgColor:	76
+	Font:	77
+	Size:	8.00000000000000
+	Pattern:	35
+	Angle:	360.00000000000000
+)
+
+(TClr.75
+	Name:	"Transparent"
+)
+
+(TClr.76
+	Name:	"Transparent"
+)
+
+(NFont.77
+	Family:	78
+	Name:	79
+	Style:	80
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.78
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.79
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.80
+	S:	"Normal"
+)
+
+(NameDict.81
+)
+
+(NameDict.82
+)
+
+(Thresh.83
+)
+
+(View.84
+	Name:	"Sistema de Alerta de Qualidade da Água no Paraíba do Sul"
+	CreationDate:	"segunda-feira, 01 de março de 2004 15:42:37"
+	GUIName:	"View"
+	Win:	85
+	CSMgr:	86
+	DocExts:	88
+	DocExts:	89
+	Graphics:	90
+	Theme:	97
+	Theme:	142
+	Theme:	173
+	Theme:	10
+	Theme:	237
+	Theme:	288
+	Theme:	353
+	Dpy:	91
+	TOCWidth:	209
+	CoordPrecision:	2
+)
+
+(DocWin.85
+	Owner:	84
+	Open:	1
+	X:	-4
+	Y:	-4
+	W:	1034
+	H:	671
+)
+
+(CSMgr.86
+	Client:	87
+)
+
+(CSClient.87
+	Client:	88
+	ReqName:	"ClientNfy"
+)
+
+(PanMgr.88
+	Doc:	84
+)
+
+(DocAct.89
+	Doc:	84
+)
+
+(GList.90
+	Dpy:	91
+	FormatNumb:	96
+)
+
+(MapDpy.91
+	Left:	325510.52499999997000
+	Bottom:	7367843.20000000020000
+	Top:	7755962.79999999980000
+	Right:	941164.57500000007000
+	Scale:	92
+	FrameTop:	6.59375000000000
+	FrameRight:	8.43750000000000
+	PageDpy:	93
+	FitToPage:	1
+	MouseLoc:	95
+)
+
+(Numb.92
+	N:	0.00001370493705
+)
+
+(PageDpy.93
+	Top:	6.59375000000000
+	Right:	8.43750000000000
+	ReportUnits:	1
+	Units:	1
+	Scale:	94
+	ZoomRight:	8.43750000000000
+	ZoomTop:	6.59375000000000
+	GridSpacingX:	0.25000000000000
+	GridSpacingY:	0.25000000000000
+)
+
+(Numb.94
+	N:	96.00000000000000
+)
+
+(PointD.95
+	x:	334631.32574074069000
+	y:	7746219.18163580260000
+)
+
+(Numb.96
+)
+
+(FTheme.97
+	Name:	"Pontos de Risco"
+	Source:	98
+	Flags:	0x07
+	Legend:	115
+	Threshold:	134
+	View:	84
+	GSet:	135
+	LegEditScript:	"View.EditLegend"
+	TxPos:	136
+	Table:	137
+	SnapTolCursor:	1
+)
+
+(XYSrc.98
+	Name:	99
+	FTab:	107
+	XField:	110
+	YField:	111
+)
+
+(XYName.99
+	Name:	"prisco.dbf"
+	OwnerClass:	"XYSrc"
+	VTab:	100
+	XField:	103
+	YField:	104
+)
+
+(VTab.100
+	Name:	"prisco.dbf"
+	BTab:	101
+	Fields:	102
+	Fields:	103
+	Fields:	104
+	SelBits:	106
+)
+
+(dBASE.101
+	Name:	"prisco.dbf"
+	Fields:	102
+	Fields:	103
+	Fields:	104
+	FileName:	105
+)
+
+(Field.102
+	Name:	"Numero"
+	Btab:	101
+	Alias:	"Numero"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.103
+	Name:	"X"
+	Btab:	101
+	Alias:	"X"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.104
+	Name:	"Y"
+	Btab:	101
+	Alias:	"Y"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.105
+	Path:	"c:/paraiba/sistalerta/novo/prisco.dbf"
+)
+
+(Bitmap.106
+	NumBits:	211
+
+)
+
+(FTab.107
+	Name:	"prisco.dbf"
+	BTab:	108
+	Fields:	113
+	Fields:	109
+	Fields:	110
+	Fields:	111
+	SelBits:	114
+	FSrc:	98
+)
+
+(dBASE.108
+	Name:	"prisco.dbf"
+	Fields:	109
+	Fields:	110
+	Fields:	111
+	FileName:	112
+)
+
+(Field.109
+	Name:	"Numero"
+	Btab:	108
+	Alias:	"Numero"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.110
+	Name:	"X"
+	Btab:	108
+	Alias:	"X"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.111
+	Name:	"Y"
+	Btab:	108
+	Alias:	"Y"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.112
+	Path:	"c:/paraiba/sistalerta/novo/prisco.dbf"
+)
+
+(Field.113
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	17
+	Order:	-1
+	Pixels:	41
+)
+
+(Bitmap.114
+	NumBits:	211
+
+)
+
+(Legend.115
+	LegType:	0x01
+	ClassType:	0x03
+	Symbols:	116
+	Class:	124
+	StdDevs:	1.00000000000000
+	NullSym:	125
+	NullValues:	132
+	StatValues:	133
+	Precision:	-3
+)
+
+(SymList.116
+	Child:	117
+)
+
+(BMkSym.117
+	Color:	118
+	BgColor:	119
+	Font:	120
+	Size:	8.00000000000000
+	Pattern:	35
+	Angle:	360.00000000000000
+)
+
+(TClr.118
+	Red:	0x189
+	Green:	0x8200
+	Blue:	0x81
+)
+
+(TClr.119
+	Name:	"Transparent"
+)
+
+(NFont.120
+	Family:	121
+	Name:	122
+	Style:	123
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.121
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.122
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.123
+	S:	"Normal"
+)
+
+(LClass.124
+	IsText:	1
+	Precision:	-3
+)
+
+(BMkSym.125
+	Color:	126
+	BgColor:	127
+	Font:	128
+	Size:	8.00000000000000
+	Pattern:	35
+	Angle:	360.00000000000000
+)
+
+(TClr.126
+	Name:	"Transparent"
+)
+
+(TClr.127
+	Name:	"Transparent"
+)
+
+(NFont.128
+	Family:	129
+	Name:	130
+	Style:	131
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.129
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.130
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.131
+	S:	"Normal"
+)
+
+(NameDict.132
+)
+
+(NameDict.133
+)
+
+(Thresh.134
+)
+
+(GSet.135
+)
+
+(TxPosPt.136
+	HAlign:	4
+	VAlign:	3
+)
+
+(Table.137
+	Name:	"Attributes of Prisco.dbf"
+	CreationDate:	"quinta-feira, 7 de outubro de 2004 18:39:16"
+	GUIName:	"Table"
+	Win:	138
+	CSMgr:	139
+	DocExts:	141
+	VTab:	107
+)
+
+(DocWin.138
+	Owner:	137
+	X:	5
+	Y:	5
+	W:	365
+	H:	255
+)
+
+(CSMgr.139
+	Client:	140
+)
+
+(CSClient.140
+	Client:	97
+	ReqName:	"RespondTable"
+)
+
+(DocAct.141
+	Doc:	137
+)
+
+(FTheme.142
+	Name:	"Núcleos Urbanos"
+	Source:	143
+	Flags:	0x04
+	Legend:	157
+	Threshold:	170
+	View:	84
+	GSet:	171
+	LegEditScript:	"View.EditLegend"
+	TxPos:	172
+	LabelField:	153
+	SnapTolCursor:	1
+)
+
+(CovSrc.143
+	Name:	144
+	FClass:	146
+	FTab:	147
+)
+
+(SrcName.144
+	FileName:	145
+	Name:	"ncidad"
+	SubName:	"polygon"
+	OwnerClass:	"CovSrc"
+)
+
+(FN.145
+	Path:	"c:/paraiba/sistalerta/ncidad"
+)
+
+(FClass.146
+	Type:	3
+	Feature:	"polygon"
+)
+
+(FTab.147
+	Name:	"pat.dbf"
+	BTab:	148
+	Fields:	155
+	Fields:	149
+	Fields:	150
+	Fields:	151
+	Fields:	152
+	Fields:	153
+	SelBits:	156
+	FSrc:	143
+)
+
+(dBASE.148
+	Name:	"pat.dbf"
+	Skip:	1
+	Fields:	149
+	Fields:	150
+	Fields:	151
+	Fields:	152
+	Fields:	153
+	FileName:	154
+)
+
+(Field.149
+	Name:	"Area"
+	Btab:	148
+	Alias:	"Area"
+	Visible:	1
+	Type:	9
+	Order:	-1
+)
+
+(Field.150
+	Name:	"Perimeter"
+	Btab:	148
+	Alias:	"Perimeter"
+	Visible:	1
+	Type:	9
+	Order:	-1
+)
+
+(Field.151
+	Name:	"Ncidad_"
+	Btab:	148
+	Alias:	"Ncidad_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+)
+
+(Field.152
+	Name:	"Ncidad_id"
+	Btab:	148
+	Alias:	"Ncidad_id"
+	Visible:	1
+	Type:	9
+	Order:	-1
+)
+
+(Field.153
+	Name:	"Nome"
+	Btab:	148
+	Alias:	"Nome"
+	Visible:	1
+	Type:	4
+	Order:	-1
+)
+
+(FN.154
+	Path:	"c:/paraiba/sistalerta/ncidad/pat.dbf"
+)
+
+(Field.155
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	19
+	Order:	-1
+)
+
+(Bitmap.156
+	NumBits:	620
+
+)
+
+(Legend.157
+	SymType:	0x02
+	LegType:	0x01
+	ClassType:	0x03
+	Symbols:	158
+	Class:	163
+	StdDevs:	1.00000000000000
+	NullSym:	164
+	NullValues:	168
+	StatValues:	169
+	Precision:	-3
+)
+
+(SymList.158
+	Child:	159
+)
+
+(BShSym.159
+	Color:	160
+	Outline:	1
+	OutlineColor:	161
+	OutlineWidth:	0.10000000000000
+	BgColor:	162
+)
+
+(TClr.160
+	Red:	0xff00
+	Green:	0xc33b
+	Blue:	0xc33b
+)
+
+(TClr.161
+)
+
+(TClr.162
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(LClass.163
+	IsText:	1
+	Precision:	-3
+)
+
+(BShSym.164
+	Color:	165
+	Outline:	1
+	OutlineColor:	166
+	OutlineWidth:	0.10000000000000
+	BgColor:	167
+)
+
+(TClr.165
+	Name:	"Transparent"
+)
+
+(TClr.166
+	Name:	"Transparent"
+)
+
+(TClr.167
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(NameDict.168
+)
+
+(NameDict.169
+)
+
+(Thresh.170
+)
+
+(GSet.171
+)
+
+(TxPosPly.172
+	HAlign:	3
+	VAlign:	3
+)
+
+(FTheme.173
+	Name:	"Regiões de Proteção"
+	Source:	174
+	Flags:	0x06
+	Legend:	204
+	Threshold:	229
+	View:	84
+	GSet:	230
+	LegEditScript:	"View.EditLegend"
+	TxPos:	231
+	LabelField:	188
+	Table:	232
+	SnapTolCursor:	1
+)
+
+(CovSrc.174
+	Name:	175
+	FClass:	177
+	FTab:	178
+)
+
+(SrcName.175
+	FileName:	176
+	Name:	"nrios"
+	SubName:	"arc"
+	OwnerClass:	"CovSrc"
+)
+
+(FN.176
+	Path:	"c:/paraiba/sistalerta/nrios"
+)
+
+(FClass.177
+	Type:	2
+	Feature:	"arc"
+)
+
+(FTab.178
+	Name:	"aat.dbf"
+	Joins:	179
+	BTab:	180
+	BTab:	197
+	Fields:	202
+	Fields:	181
+	Fields:	182
+	Fields:	183
+	Fields:	184
+	Fields:	185
+	Fields:	186
+	Fields:	187
+	Fields:	188
+	Fields:	189
+	Fields:	190
+	Fields:	191
+	Fields:	192
+	Fields:	193
+	Fields:	194
+	Fields:	195
+	Fields:	198
+	Fields:	199
+	Fields:	200
+	SelBits:	203
+	FSrc:	174
+)
+
+(Join.179
+	FromBtab:	180
+	FromField:	187
+	ToBtab:	197
+	ToField:	199
+)
+
+(dBASE.180
+	Name:	"aat.dbf"
+	Fields:	181
+	Fields:	182
+	Fields:	183
+	Fields:	184
+	Fields:	185
+	Fields:	186
+	Fields:	187
+	Fields:	188
+	Fields:	189
+	Fields:	190
+	Fields:	191
+	Fields:	192
+	Fields:	193
+	Fields:	194
+	Fields:	195
+	FileName:	196
+)
+
+(Field.181
+	Name:	"Fnode_"
+	Btab:	180
+	Alias:	"Fnode_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.182
+	Name:	"Tnode_"
+	Btab:	180
+	Alias:	"Tnode_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.183
+	Name:	"Lpoly_"
+	Btab:	180
+	Alias:	"Lpoly_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.184
+	Name:	"Rpoly_"
+	Btab:	180
+	Alias:	"Rpoly_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.185
+	Name:	"Length"
+	Btab:	180
+	Alias:	"Length"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.186
+	Name:	"Nrios_"
+	Btab:	180
+	Alias:	"Nrios_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.187
+	Name:	"Nrios_id"
+	Btab:	180
+	Alias:	"Nrios_id"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.188
+	Name:	"Nome"
+	Btab:	180
+	Alias:	"Nome"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.189
+	Name:	"Numero"
+	Btab:	180
+	Alias:	"Numero"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	42
+)
+
+(Field.190
+	Name:	"Numrio"
+	Btab:	180
+	Alias:	"Numrio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.191
+	Name:	"Cod_otto"
+	Btab:	180
+	Alias:	"Cod_otto"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	95
+)
+
+(Field.192
+	Name:	"Comprio"
+	Btab:	180
+	Alias:	"Comprio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.193
+	Name:	"Compacum"
+	Btab:	180
+	Alias:	"Compacum"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.194
+	Name:	"Areadren"
+	Btab:	180
+	Alias:	"Areadren"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.195
+	Name:	"Dir"
+	Btab:	180
+	Alias:	"Dir"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	23
+)
+
+(FN.196
+	Path:	"c:/paraiba/sistalerta/nrios/aat.dbf"
+)
+
+(dBASE.197
+	Name:	"mairisco.dbf"
+	Fields:	198
+	Fields:	199
+	Fields:	200
+	FileName:	201
+)
+
+(Field.198
+	Name:	"Rio"
+	Btab:	197
+	Alias:	"Rio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.199
+	Name:	"Trecho"
+	Btab:	197
+	Alias:	"Trecho"
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.200
+	Name:	"Maiorrisco"
+	Btab:	197
+	Alias:	"Maiorrisco"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.201
+	Path:	"c:/paraiba/sistalerta/novo/mairisco.dbf"
+)
+
+(Field.202
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	18
+	Order:	-1
+	Pixels:	59
+)
+
+(Bitmap.203
+	NumBits:	4713
+
+)
+
+(Legend.204
+	SymType:	0x01
+	LegType:	0x08
+	ClassType:	0x03
+	FieldNames:	205
+	Symbols:	206
+	Class:	219
+	Class:	220
+	Class:	221
+	Class:	222
+	Class:	223
+	Class:	224
+	StdDevs:	1.00000000000000
+	NullSym:	225
+	NullValues:	227
+	StatValues:	228
+	Precision:	-3
+)
+
+(AVStr.205
+	S:	"Maiorrisco"
+)
+
+(SymList.206
+	Child:	207
+	Child:	209
+	Child:	211
+	Child:	213
+	Child:	215
+	Child:	217
+)
+
+(BLnSym.207
+	Color:	208
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.208
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(BLnSym.209
+	Color:	210
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.210
+	Green:	0xffff
+)
+
+(BLnSym.211
+	Color:	212
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.212
+	Red:	0xff00
+	Green:	0xad9f
+	Blue:	0xfe
+)
+
+(BLnSym.213
+	Color:	214
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.214
+	Red:	0xffff
+)
+
+(BLnSym.215
+	Color:	216
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.216
+	Red:	0x6400
+	Green:	0x63
+	Blue:	0x63
+)
+
+(BLnSym.217
+	Color:	218
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.218
+	Name:	"Transparent"
+)
+
+(LClass.219
+	Label:	"0.662"
+	MinNum:	0.66214000000000
+	MaxNum:	0.66214000000000
+	Precision:	-3
+)
+
+(LClass.220
+	Label:	"0.685"
+	MinNum:	0.68485000000000
+	MaxNum:	0.68485000000000
+	Precision:	-3
+)
+
+(LClass.221
+	Label:	"0.794"
+	MinNum:	0.79400000000000
+	MaxNum:	0.79400000000000
+	Precision:	-3
+)
+
+(LClass.222
+	Label:	"0.866"
+	MinNum:	0.86583000000000
+	MaxNum:	0.86583000000000
+	Precision:	-3
+)
+
+(LClass.223
+	Label:	"0.91"
+	MinNum:	0.91002000000000
+	MaxNum:	0.91002000000000
+	Precision:	-3
+)
+
+(LClass.224
+	IsNoData:	1
+	Label:	"No Data"
+	MaxNum:	-1.00000000000000
+	Precision:	-3
+)
+
+(BLnSym.225
+	Color:	226
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.226
+	Name:	"Transparent"
+)
+
+(NameDict.227
+)
+
+(NameDict.228
+)
+
+(Thresh.229
+)
+
+(GSet.230
+)
+
+(TxPosArc.231
+	HAlign:	3
+	VAlign:	1
+)
+
+(Table.232
+	Name:	"Attributes of Nrios"
+	CreationDate:	"domingo, 18 de abril de 2004 21:13:43"
+	GUIName:	"Table"
+	Win:	233
+	CSMgr:	234
+	DocExts:	236
+	VTab:	178
+)
+
+(DocWin.233
+	Owner:	232
+	X:	314
+	Y:	238
+	W:	365
+	H:	248
+)
+
+(CSMgr.234
+	Client:	235
+)
+
+(CSClient.235
+	Client:	173
+	ReqName:	"RespondTable"
+)
+
+(DocAct.236
+	Doc:	232
+)
+
+(FTheme.237
+	Name:	"Captações Originais"
+	Source:	238
+	Flags:	0x04
+	Legend:	266
+	Threshold:	285
+	View:	84
+	GSet:	286
+	LegEditScript:	"View.EditLegend"
+	TxPos:	287
+	LabelField:	246
+	SnapTolCursor:	1
+)
+
+(XYSrc.238
+	Name:	239
+	FTab:	240
+	XField:	248
+	YField:	249
+)
+
+(XYName.239
+	Name:	"captvaz.dbf"
+	OwnerClass:	"XYSrc"
+	VTab:	13
+	XField:	21
+	YField:	22
+)
+
+(FTab.240
+	Name:	"captvaz.dbf"
+	BTab:	241
+	Fields:	264
+	Fields:	242
+	Fields:	243
+	Fields:	244
+	Fields:	245
+	Fields:	246
+	Fields:	247
+	Fields:	248
+	Fields:	249
+	Fields:	250
+	Fields:	251
+	Fields:	252
+	Fields:	253
+	Fields:	254
+	Fields:	255
+	Fields:	256
+	Fields:	257
+	Fields:	258
+	Fields:	259
+	Fields:	260
+	Fields:	261
+	Fields:	262
+	SelBits:	265
+	FSrc:	238
+)
+
+(dBASE.241
+	Name:	"captvaz.dbf"
+	Fields:	242
+	Fields:	243
+	Fields:	244
+	Fields:	245
+	Fields:	246
+	Fields:	247
+	Fields:	248
+	Fields:	249
+	Fields:	250
+	Fields:	251
+	Fields:	252
+	Fields:	253
+	Fields:	254
+	Fields:	255
+	Fields:	256
+	Fields:	257
+	Fields:	258
+	Fields:	259
+	Fields:	260
+	Fields:	261
+	Fields:	262
+	FileName:	263
+)
+
+(Field.242
+	Name:	"Id_unico"
+	Btab:	241
+	Alias:	"Id_unico"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.243
+	Name:	"Id_declara"
+	Btab:	241
+	Alias:	"Id_declara"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.244
+	Name:	"Id_empreen"
+	Btab:	241
+	Alias:	"Id_empreen"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.245
+	Name:	"Id_captaca"
+	Btab:	241
+	Alias:	"Id_captaca"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.246
+	Name:	"Tipo"
+	Btab:	241
+	Alias:	"Tipo"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.247
+	Name:	"Id_tip_cap"
+	Btab:	241
+	Alias:	"Id_tip_cap"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.248
+	Name:	"X"
+	Btab:	241
+	Alias:	"X"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.249
+	Name:	"Y"
+	Btab:	241
+	Alias:	"Y"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.250
+	Name:	"Id_crp_hid"
+	Btab:	241
+	Alias:	"Id_crp_hid"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.251
+	Name:	"Ch_n_encon"
+	Btab:	241
+	Alias:	"Ch_n_encon"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	66
+)
+
+(Field.252
+	Name:	"Nome_ch"
+	Btab:	241
+	Alias:	"Nome_ch"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.253
+	Name:	"Nome"
+	Btab:	241
+	Alias:	"Nome"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.254
+	Name:	"Disttrecho"
+	Btab:	241
+	Alias:	"Disttrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.255
+	Name:	"Xtrecho"
+	Btab:	241
+	Alias:	"Xtrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.256
+	Name:	"Ytrecho"
+	Btab:	241
+	Alias:	"Ytrecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.257
+	Name:	"Rio"
+	Btab:	241
+	Alias:	"Rio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.258
+	Name:	"Ponto"
+	Btab:	241
+	Alias:	"Ponto"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.259
+	Name:	"Nomerio"
+	Btab:	241
+	Alias:	"Nomerio"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.260
+	Name:	"Numnome"
+	Btab:	241
+	Alias:	"Numnome"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.261
+	Name:	"Cap_md_est"
+	Btab:	241
+	Alias:	"Cap_md_est"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	65
+)
+
+(Field.262
+	Name:	"Vazmed"
+	Btab:	241
+	Alias:	"Vazmed"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.263
+	Path:	"c:/paraiba/sistalerta/captvaz.dbf"
+)
+
+(Field.264
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	17
+	Order:	-1
+)
+
+(Bitmap.265
+	NumBits:	163
+
+)
+
+(Legend.266
+	LegType:	0x01
+	ClassType:	0x03
+	Symbols:	267
+	Class:	275
+	StdDevs:	1.00000000000000
+	NullSym:	276
+	NullValues:	283
+	StatValues:	284
+	Precision:	-3
+)
+
+(SymList.267
+	Child:	268
+)
+
+(BMkSym.268
+	Color:	269
+	BgColor:	270
+	Font:	271
+	Size:	8.00000000000000
+	Pattern:	35
+	Angle:	360.00000000000000
+)
+
+(TClr.269
+	Red:	0xff00
+	Green:	0xad9f
+	Blue:	0xfe
+)
+
+(TClr.270
+	Name:	"Transparent"
+)
+
+(NFont.271
+	Family:	272
+	Name:	273
+	Style:	274
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.272
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.273
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.274
+	S:	"Normal"
+)
+
+(LClass.275
+	IsText:	1
+	Precision:	-3
+)
+
+(BMkSym.276
+	Color:	277
+	BgColor:	278
+	Font:	279
+	Size:	8.00000000000000
+	Pattern:	35
+	Angle:	360.00000000000000
+)
+
+(TClr.277
+	Name:	"Transparent"
+)
+
+(TClr.278
+	Name:	"Transparent"
+)
+
+(NFont.279
+	Family:	280
+	Name:	281
+	Style:	282
+	Weight:	1
+	Wideness:	1
+)
+
+(AVStr.280
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.281
+	S:	"ESRI Geometric Symbols"
+)
+
+(AVStr.282
+	S:	"Normal"
+)
+
+(NameDict.283
+)
+
+(NameDict.284
+)
+
+(Thresh.285
+)
+
+(GSet.286
+)
+
+(TxPosPt.287
+	HAlign:	4
+	VAlign:	3
+)
+
+(FTheme.288
+	Name:	"Grau de Risco"
+	Source:	289
+	Flags:	0x06
+	Legend:	320
+	Threshold:	345
+	View:	84
+	GSet:	346
+	LegEditScript:	"View.EditLegend"
+	TxPos:	347
+	LabelField:	303
+	Table:	348
+	SnapTolCursor:	1
+)
+
+(CovSrc.289
+	Name:	290
+	FClass:	292
+	FTab:	293
+)
+
+(SrcName.290
+	FileName:	291
+	Name:	"nrios"
+	SubName:	"arc"
+	OwnerClass:	"CovSrc"
+)
+
+(FN.291
+	Path:	"c:/paraiba/sistalerta/nrios"
+)
+
+(FClass.292
+	Type:	2
+	Feature:	"arc"
+)
+
+(FTab.293
+	Name:	"aat.dbf"
+	Joins:	294
+	BTab:	295
+	BTab:	312
+	Fields:	318
+	Fields:	296
+	Fields:	297
+	Fields:	298
+	Fields:	299
+	Fields:	300
+	Fields:	301
+	Fields:	302
+	Fields:	303
+	Fields:	304
+	Fields:	305
+	Fields:	306
+	Fields:	307
+	Fields:	308
+	Fields:	309
+	Fields:	310
+	Fields:	313
+	Fields:	314
+	Fields:	315
+	Fields:	316
+	SelBits:	319
+	FSrc:	289
+)
+
+(Join.294
+	FromBtab:	295
+	FromField:	302
+	ToBtab:	312
+	ToField:	313
+)
+
+(dBASE.295
+	Name:	"aat.dbf"
+	Fields:	296
+	Fields:	297
+	Fields:	298
+	Fields:	299
+	Fields:	300
+	Fields:	301
+	Fields:	302
+	Fields:	303
+	Fields:	304
+	Fields:	305
+	Fields:	306
+	Fields:	307
+	Fields:	308
+	Fields:	309
+	Fields:	310
+	FileName:	311
+)
+
+(Field.296
+	Name:	"Fnode_"
+	Btab:	295
+	Alias:	"Fnode_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.297
+	Name:	"Tnode_"
+	Btab:	295
+	Alias:	"Tnode_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.298
+	Name:	"Lpoly_"
+	Btab:	295
+	Alias:	"Lpoly_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.299
+	Name:	"Rpoly_"
+	Btab:	295
+	Alias:	"Rpoly_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.300
+	Name:	"Length"
+	Btab:	295
+	Alias:	"Length"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.301
+	Name:	"Nrios_"
+	Btab:	295
+	Alias:	"Nrios_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.302
+	Name:	"Nrios_id"
+	Btab:	295
+	Alias:	"Nrios_id"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.303
+	Name:	"Nome"
+	Btab:	295
+	Alias:	"Nome"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	150
+)
+
+(Field.304
+	Name:	"Numero"
+	Btab:	295
+	Alias:	"Numero"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	42
+)
+
+(Field.305
+	Name:	"Numrio"
+	Btab:	295
+	Alias:	"Numrio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.306
+	Name:	"Cod_otto"
+	Btab:	295
+	Alias:	"Cod_otto"
+	Visible:	1
+	Type:	4
+	Order:	-1
+	Pixels:	95
+)
+
+(Field.307
+	Name:	"Comprio"
+	Btab:	295
+	Alias:	"Comprio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.308
+	Name:	"Compacum"
+	Btab:	295
+	Alias:	"Compacum"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.309
+	Name:	"Areadren"
+	Btab:	295
+	Alias:	"Areadren"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.310
+	Name:	"Dir"
+	Btab:	295
+	Alias:	"Dir"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	23
+)
+
+(FN.311
+	Path:	"c:/paraiba/sistalerta/nrios/aat.dbf"
+)
+
+(dBASE.312
+	Name:	"risco.dbf"
+	Fields:	313
+	Fields:	314
+	Fields:	315
+	Fields:	316
+	FileName:	317
+)
+
+(Field.313
+	Name:	"Trecho"
+	Btab:	312
+	Alias:	"Trecho"
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.314
+	Name:	"Nopontos"
+	Btab:	312
+	Alias:	"Nopontos"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.315
+	Name:	"Q710j"
+	Btab:	312
+	Alias:	"Q710j"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.316
+	Name:	"Grau_de_ri"
+	Btab:	312
+	Alias:	"Grau_de_ri"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.317
+	Path:	"c:/paraiba/sistalerta/novo/risco.dbf"
+)
+
+(Field.318
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	18
+	Order:	-1
+	Pixels:	59
+)
+
+(Bitmap.319
+	NumBits:	4713
+
+)
+
+(Legend.320
+	SymType:	0x01
+	LegType:	0x02
+	ClassType:	0x03
+	FieldNames:	321
+	Symbols:	322
+	Class:	335
+	Class:	336
+	Class:	337
+	Class:	338
+	Class:	339
+	Class:	340
+	StdDevs:	1.00000000000000
+	NullSym:	341
+	NullValues:	343
+	StatValues:	344
+	Precision:	-3
+)
+
+(AVStr.321
+	S:	"Grau_de_ri"
+)
+
+(SymList.322
+	Child:	323
+	Child:	325
+	Child:	327
+	Child:	329
+	Child:	331
+	Child:	333
+)
+
+(BLnSym.323
+	Color:	324
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.324
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(BLnSym.325
+	Color:	326
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.326
+	Red:	0xfeff
+	Green:	0x8777
+	Blue:	0x8777
+)
+
+(BLnSym.327
+	Color:	328
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.328
+	Red:	0xffff
+)
+
+(BLnSym.329
+	Color:	330
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.330
+	Red:	0xaeff
+	Green:	0xae
+	Blue:	0xae
+)
+
+(BLnSym.331
+	Color:	332
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.332
+	Red:	0x63ff
+	Green:	0x63
+	Blue:	0x63
+)
+
+(BLnSym.333
+	Color:	334
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.334
+	Name:	"Transparent"
+)
+
+(LClass.335
+	Label:	"0"
+	Precision:	-3
+)
+
+(LClass.336
+	Label:	"0 - 24.507"
+	MaxNum:	24.50700000000000
+	Precision:	-3
+)
+
+(LClass.337
+	Label:	"24.507 - 88.859"
+	MinNum:	24.50700000000000
+	MaxNum:	88.85900000000000
+	Precision:	-3
+)
+
+(LClass.338
+	Label:	"88.859 - 238.255"
+	MinNum:	88.85903999999999
+	MaxNum:	238.25516999999999
+	Precision:	-3
+)
+
+(LClass.339
+	Label:	"238.255 - 864.671"
+	MinNum:	238.25516999999999
+	MaxNum:	864.67083000000002
+	Precision:	-3
+)
+
+(LClass.340
+	IsNoData:	1
+	Label:	"No Data"
+	MaxNum:	-1.00000000000000
+	Precision:	-3
+)
+
+(BLnSym.341
+	Color:	342
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.342
+	Name:	"Transparent"
+)
+
+(NameDict.343
+)
+
+(NameDict.344
+)
+
+(Thresh.345
+)
+
+(GSet.346
+)
+
+(TxPosArc.347
+	HAlign:	3
+	VAlign:	1
+)
+
+(Table.348
+	Name:	"Attributes of Rios"
+	CreationDate:	"sexta-feira, 16 de abril de 2004 17:27:30"
+	GUIName:	"Table"
+	Win:	349
+	CSMgr:	350
+	DocExts:	352
+	VTab:	293
+)
+
+(DocWin.349
+	Owner:	348
+	X:	222
+	Y:	133
+	W:	365
+	H:	248
+)
+
+(CSMgr.350
+	Client:	351
+)
+
+(CSClient.351
+	Client:	288
+	ReqName:	"RespondTable"
+)
+
+(DocAct.352
+	Doc:	348
+)
+
+(FTheme.353
+	Name:	"Bacia"
+	Source:	354
+	Flags:	0x04
+	Legend:	370
+	Threshold:	379
+	View:	84
+	GSet:	380
+	LegEditScript:	"View.EditLegend"
+	TxPos:	381
+	SnapTolCursor:	1
+)
+
+(CovSrc.354
+	Name:	355
+	FClass:	357
+	FTab:	358
+)
+
+(SrcName.355
+	FileName:	356
+	Name:	"bacia"
+	SubName:	"arc"
+	OwnerClass:	"CovSrc"
+)
+
+(FN.356
+	Path:	"c:/paraiba/sistalerta/bacia"
+)
+
+(FClass.357
+	Type:	2
+	Feature:	"arc"
+)
+
+(FTab.358
+	Name:	"aat.dbf"
+	BTab:	359
+	Fields:	368
+	Fields:	360
+	Fields:	361
+	Fields:	362
+	Fields:	363
+	Fields:	364
+	Fields:	365
+	Fields:	366
+	SelBits:	369
+	FSrc:	354
+)
+
+(dBASE.359
+	Name:	"aat.dbf"
+	Fields:	360
+	Fields:	361
+	Fields:	362
+	Fields:	363
+	Fields:	364
+	Fields:	365
+	Fields:	366
+	FileName:	367
+)
+
+(Field.360
+	Name:	"Fnode_"
+	Btab:	359
+	Alias:	"Fnode_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.361
+	Name:	"Tnode_"
+	Btab:	359
+	Alias:	"Tnode_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.362
+	Name:	"Lpoly_"
+	Btab:	359
+	Alias:	"Lpoly_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.363
+	Name:	"Rpoly_"
+	Btab:	359
+	Alias:	"Rpoly_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.364
+	Name:	"Length"
+	Btab:	359
+	Alias:	"Length"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.365
+	Name:	"Bacia_"
+	Btab:	359
+	Alias:	"Bacia_"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(Field.366
+	Name:	"Bacia_id"
+	Btab:	359
+	Alias:	"Bacia_id"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	71
+)
+
+(FN.367
+	Path:	"c:/paraiba/sistalerta/bacia/aat.dbf"
+)
+
+(Field.368
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	18
+	Order:	-1
+	Pixels:	59
+)
+
+(Bitmap.369
+	NumBits:	74
+
+)
+
+(Legend.370
+	SymType:	0x01
+	LegType:	0x01
+	ClassType:	0x03
+	Symbols:	371
+	Class:	374
+	StdDevs:	1.00000000000000
+	NullSym:	375
+	NullValues:	377
+	StatValues:	378
+	Precision:	-3
+)
+
+(SymList.371
+	Child:	372
+)
+
+(BLnSym.372
+	Color:	373
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.373
+	Red:	0xffff
+	Blue:	0xffff
+)
+
+(LClass.374
+	IsText:	1
+	Precision:	-3
+)
+
+(BLnSym.375
+	Color:	376
+	Width:	0.10000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+	Pattern:	0.00000000000000
+)
+
+(TClr.376
+	Name:	"Transparent"
+)
+
+(NameDict.377
+)
+
+(NameDict.378
+)
+
+(Thresh.379
+)
+
+(GSet.380
+)
+
+(TxPosArc.381
+	HAlign:	3
+	VAlign:	1
+)
+
+(GSet.382
+)
+
+(TxPosPt.383
+	HAlign:	4
+	VAlign:	3
+)
+
+(DocAct.384
+	Doc:	6
+)
+
+(Table.385
+	Name:	"Attributes of Pontos de Risco"
+	CreationDate:	"quinta-feira, 7 de outubro de 2004 18:34:06"
+	GUIName:	"Table"
+	Win:	386
+	CSMgr:	387
+	DocExts:	388
+	VTab:	389
+)
+
+(DocWin.386
+	Owner:	385
+	X:	35
+	Y:	35
+	W:	365
+	H:	255
+)
+
+(CSMgr.387
+)
+
+(DocAct.388
+	Doc:	385
+)
+
+(FTab.389
+	Name:	"prisco.dbf"
+	BTab:	390
+	Fields:	395
+	Fields:	391
+	Fields:	392
+	Fields:	393
+	SelBits:	396
+	FSrc:	397
+)
+
+(dBASE.390
+	Name:	"prisco.dbf"
+	Fields:	391
+	Fields:	392
+	Fields:	393
+	FileName:	394
+)
+
+(Field.391
+	Name:	"Numero"
+	Btab:	390
+	Alias:	"Numero"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.392
+	Name:	"X"
+	Btab:	390
+	Alias:	"X"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.393
+	Name:	"Y"
+	Btab:	390
+	Alias:	"Y"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(FN.394
+	Path:	"c:/paraiba/sistalerta/prisco.dbf"
+)
+
+(Field.395
+	Name:	"Shape"
+	Alias:	"Shape"
+	Visible:	1
+	Type:	17
+	Order:	-1
+	Pixels:	41
+)
+
+(Bitmap.396
+	NumBits:	220
+	NumBitsSet:	1
+	Bits:	00000000 00000000 00000000 00000000 
+	Bits:	00020000 00000000 00000000 
+)
+
+(XYSrc.397
+	Name:	398
+	FTab:	389
+	XField:	392
+	YField:	393
+)
+
+(XYName.398
+	Name:	"prisco.dbf"
+	OwnerClass:	"XYSrc"
+	VTab:	399
+	XField:	402
+	YField:	403
+)
+
+(VTab.399
+	Name:	"prisco.dbf"
+	BTab:	400
+	Fields:	401
+	Fields:	402
+	Fields:	403
+	SelBits:	405
+)
+
+(dBASE.400
+	Name:	"prisco.dbf"
+	Fields:	401
+	Fields:	402
+	Fields:	403
+	FileName:	404
+)
+
+(Field.401
+	Name:	"Numero"
+	Btab:	400
+	Alias:	"Numero"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.402
+	Name:	"X"
+	Btab:	400
+	Alias:	"X"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(Field.403
+	Name:	"Y"
+	Btab:	400
+	Alias:	"Y"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	83
+)
+
+(FN.404
+	Path:	"c:/paraiba/sistalerta/prisco.dbf"
+)
+
+(Bitmap.405
+	NumBits:	220
+
+)
+
+(Table.406
+	Name:	"captvaz.dbf"
+	CreationDate:	"segunda-feira, 01 de março de 2004 17:08:25"
+	GUIName:	"Table"
+	Win:	407
+	CSMgr:	408
+	DocExts:	409
+	VTab:	13
+)
+
+(DocWin.407
+	Owner:	406
+	X:	5
+	Y:	5
+	W:	365
+	H:	248
+)
+
+(CSMgr.408
+)
+
+(DocAct.409
+	Doc:	406
+)
+
+(Table.410
+	Name:	"mairisco.dbf"
+	CreationDate:	"quinta-feira, 7 de outubro de 2004 18:20:37"
+	GUIName:	"Table"
+	Win:	411
+	CSMgr:	412
+	DocExts:	413
+	VTab:	414
+)
+
+(DocWin.411
+	Owner:	410
+	X:	20
+	Y:	20
+	W:	365
+	H:	255
+)
+
+(CSMgr.412
+)
+
+(DocAct.413
+	Doc:	410
+)
+
+(VTab.414
+	Name:	"mairisco.dbf"
+	BTab:	415
+	Fields:	416
+	Fields:	417
+	Fields:	418
+	SelBits:	420
+)
+
+(dBASE.415
+	Name:	"mairisco.dbf"
+	Fields:	416
+	Fields:	417
+	Fields:	418
+	FileName:	419
+)
+
+(Field.416
+	Name:	"Rio"
+	Btab:	415
+	Alias:	"Rio"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.417
+	Name:	"Trecho"
+	Btab:	415
+	Alias:	"Trecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.418
+	Name:	"Maiorrisco"
+	Btab:	415
+	Alias:	"Maiorrisco"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.419
+	Path:	"c:/paraiba/sistalerta/novo/mairisco.dbf"
+)
+
+(Bitmap.420
+	NumBits:	4713
+
+)
+
+(Table.421
+	Name:	"prisco.dbf"
+	CreationDate:	"quinta-feira, 7 de outubro de 2004 18:38:26"
+	GUIName:	"Table"
+	Win:	422
+	CSMgr:	423
+	DocExts:	424
+	VTab:	100
+)
+
+(DocWin.422
+	Owner:	421
+	X:	273
+	Y:	186
+	W:	365
+	H:	255
+)
+
+(CSMgr.423
+)
+
+(DocAct.424
+	Doc:	421
+)
+
+(Table.425
+	Name:	"risco.dbf"
+	CreationDate:	"quinta-feira, 7 de outubro de 2004 18:18:51"
+	GUIName:	"Table"
+	Win:	426
+	CSMgr:	427
+	DocExts:	428
+	VTab:	429
+)
+
+(DocWin.426
+	Owner:	425
+	X:	577
+	Y:	59
+	W:	365
+	H:	255
+)
+
+(CSMgr.427
+)
+
+(DocAct.428
+	Doc:	425
+)
+
+(VTab.429
+	Name:	"risco.dbf"
+	BTab:	430
+	Fields:	431
+	Fields:	432
+	Fields:	433
+	Fields:	434
+	SelBits:	436
+)
+
+(dBASE.430
+	Name:	"risco.dbf"
+	Fields:	431
+	Fields:	432
+	Fields:	433
+	Fields:	434
+	FileName:	435
+)
+
+(Field.431
+	Name:	"Trecho"
+	Btab:	430
+	Alias:	"Trecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.432
+	Name:	"Nopontos"
+	Btab:	430
+	Alias:	"Nopontos"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.433
+	Name:	"Q710j"
+	Btab:	430
+	Alias:	"Q710j"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.434
+	Name:	"Grau_de_ri"
+	Btab:	430
+	Alias:	"Grau_de_ri"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(FN.435
+	Path:	"c:/paraiba/sistalerta/novo/risco.dbf"
+)
+
+(Bitmap.436
+	NumBits:	4713
+
+)
+
+(Table.437
+	Name:	"vzcapac.dbf"
+	CreationDate:	"quinta-feira, 29 de abril de 2004 17:09:28"
+	GUIName:	"Table"
+	Win:	438
+	CSMgr:	439
+	DocExts:	440
+	VTab:	441
+)
+
+(DocWin.438
+	Owner:	437
+	X:	539
+	Y:	138
+	W:	365
+	H:	255
+)
+
+(CSMgr.439
+)
+
+(DocAct.440
+	Doc:	437
+)
+
+(VTab.441
+	Name:	"vzcapac.dbf"
+	BTab:	442
+	Fields:	443
+	Fields:	444
+	SelBits:	446
+)
+
+(dBASE.442
+	Name:	"vzcapac.dbf"
+	Fields:	443
+	Fields:	444
+	FileName:	445
+)
+
+(Field.443
+	Name:	"Trecho"
+	Btab:	442
+	Alias:	"Trecho"
+	Visible:	1
+	Type:	9
+	Order:	-1
+	Pixels:	125
+)
+
+(Field.444
+	Name:	"Vaz_acum"
+	Btab:	442
+	Alias:	"Vaz_acum"
+	Visible:	1
+	Type:	9
+	Order:	-1
+)
+
+(FN.445
+	Path:	"c:/paraiba/sistalerta/vzcapac.dbf"
+)
+
+(Bitmap.446
+	NumBits:	871
+
+)
+
+(LButn.447
+	HelpTopic:	"New_button"
+	Update:	"Doc.NewUpdate"
+	Label:	"&New"
+	Click:	"Table.New"
+)
+
+(LButn.448
+	HelpTopic:	"Open_button"
+	Update:	"Doc.OpenUpdate"
+	Label:	"&Open"
+	Click:	"Doc.Open"
+)
+
+(LButn.449
+	HelpTopic:	"Add_button"
+	Update:	"Table.ActionUpdate"
+	Label:	"&Add"
+	Click:	"Table.Action"
+)
+
+(NameDict.450
+)
+
+(NameDict.451
+	Obj:	452
+	Obj:	453
+)
+
+(AVDict.452
+	InternalName:	"Table of Contents Defaults Dialog"
+)
+
+(AVDict.453
+	InternalName:	"_Thor_"
+)
+
+(FN.1279
+	Path:	"$HOME"
+)
+
+(TClr.1280
+	Red:	0xffff
+	Green:	0xffff
+)
+
+(AVStr.1281
+	S:	"View"
+)
+
+(AVStr.1282
+	S:	"Table"
+)
+
+(AVStr.1283
+	S:	"Chart"
+)
+
+(AVStr.1284
+	S:	"Layout"
+)
+
+(AVStr.1285
+	S:	"Script"
+)
+
+(AVStr.1286
+	S:	"Project"
+)
+
+(AVStr.1287
+	S:	"Appl"
+)
+

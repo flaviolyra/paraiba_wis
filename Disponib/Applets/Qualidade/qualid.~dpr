@@ -1,0 +1,13 @@
+program qualid;
+
+uses
+  Forms,
+  qualidade in '\\MEDUSA\SISTINFO\Paraiba\NvSisInf\Delphi\Access97\NQualidade\qualidade.pas' {Form_Qualidade};
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm_Qualidade, Form_Qualidade);
+  Application.Run;
+end.

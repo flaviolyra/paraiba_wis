@@ -1,0 +1,10 @@
+
+------------------- TRACEBACK -------------------------
+Module "AVArray" Message   0: file ".\err.c   " line 645
+Module "CBlok" Message  -1: file "..\avenue\cblok.c" line 1538
+Module "CBlok" Message  -1: file "..\avenue\cblok.c" line 1538
+Module "CBlok" Message  -1: file "..\avenue\cblok.c" line 1538
+Module "CBlok" Message  -1: file "..\avenue\cblok.c" line 1538
+Module "Script" Message  -1: file "..\avenue\script.c" line 151
+Module "Script" Message  -1: file "..\avenue\script.c" line 274
+-------------------------------------------------------

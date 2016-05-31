@@ -1,0 +1,643 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://www.hidro.ufrj.br/pqarj/paginas/42/texto.htm -->
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><FONT face=Arial><B>
+<P align=center>SISTEMA DE PLANEJAMENTO DE INVESTIMENTOS</P></B></FONT><FONT 
+size=2></FONT><B>
+<P>1. Introdução</P></B>
+<P align=justify>O Sistema de Planejamento de Investimentos na Bacia do Paraíba 
+do Sul consiste em uma ferramenta de planejamento baseada no gerenciador de 
+banco de dados <I>Microsoft Access </I>que possibilita o desenvolvimento de 
+cenários para a implementação do Programa de Investimentos na bacia.</P>
+<P align=justify>O objetivo principal do sistema é proporcionar às diversas 
+entidades envolvidas no Programa de Investimentos (Comitê para Integração da 
+Bacia Hidrográfica do Rio Paraíba do Sul–CEIVAP), governos municipais e 
+possíveis financiadores do Programa) ferramentas de planejamento que, através do 
+desenvolvimento de cenários e da visualização do Programa em diferentes níveis, 
+auxiliem o processo de acompanhamento de sua implementação e estudo das 
+alternativas de desenvolvimento e financiamento das etapas futuras.</P>
+<P align=justify>É importante salientar que o Sistema, tal como se apresenta, 
+representa apenas uma versão inicial que poderá ser muito enriquecida a partir 
+da experiência resultante de sua efetiva utilização como ferramenta de 
+planejamento na bacia.</P>
+<P align=justify>O Programa, em formato de banco de dados <I>Microsoft 
+Access</I> 97, encontra-se disponível para cópia no CEIVAP, na Secretaria de 
+Política Urbana (SEPURB), vinculada à Presidência da República e na Secretaria 
+de estado de Meio Ambiente e Desenvolvimento Sustentável do Estado do Rio de 
+Janeiro (SEMADS) </P><B>
+<P>2. DESCRIÇÃO DO SISTEMA</P>
+<P>2.1 Estrutura</P>
+<P>Ações</P></B>
+<P align=justify>A base sobre a qual está construído o Sistema de Planejamento é 
+a tabela de ações do Programa de Investimentos. O Programa, em sua concepção 
+inicial, está dividido nos três módulos (Gestão de Recursos Hídricos, 
+Recuperação da Qualidade Ambiental e Proteção e Aproveitamento dos Recursos 
+Hídricos). Estes, por sua vez, dividem-se em um total de 12 programas, que se 
+subdividem em 55 subprogramas. Alguns desses subprogramas necessitam uma 
+subdivisão adicional, como ocorre com os de âmbito municipal, que precisam ser 
+divididos, em alguns casos, até o nível de localidade. Essa subdivisão se dá sob 
+a forma de 797 ações que contemplam, inclusive, as diferentes opções físicas. A 
+escolha do conjunto de opções físicas restringe esse número a 581.</P>
+<P>Cada ação é identificada por cinco números separados por pontos na forma 
+seguinte:</P>
+<P>[Módulo].[Programa].[Subprograma].[Nível 1].[Nível 2]</P>
+<P align=justify>Módulo, Programa e Subprograma correspondem às divisões usuais 
+do Programa de Investimentos. Nível 2, quando existente, corresponde a uma opção 
+física (grau de tratamento de esgoto ou forma de disposição de resíduos 
+sólidos). Nível 1, quando existente, corresponde, tratando-se de ações de âmbito 
+municipal, aos municípios e, em alguns casos, a localidades das intervenções. Em 
+alguns outros casos pode corresponder a etapas de uma intervenção, ou mesmo a 
+fases de investimento ou operação de uma intervenção.</P>
+<P align=justify>A cada ação é associado um cronograma financeiro mensal, que 
+proporciona ainda a informação de custo total e prazo da mesma. A ação está 
+localizada em termos de Unidade da Federação (RJ, no caso presente), da 
+sub-região correspondente (A, B, C ou todas – ABC) e, quando pertinente, do 
+município e, em algumas situações, da localidade. Associado a cada ação estão 
+também seu executor e a classificação com uma ação de investimento (I) ou de 
+operação (O).</P><B>
+<P>Atividades e Programação</P></B>
+<P align=justify>Do ponto de vista de planejamento temporal, a unidade mínima de 
+programação é a atividade, que corresponde a uma ou mais ações, concebidas para 
+serem executadas como uma unidade. O relacionamento entre as ações pode ser tal 
+que elas devam ser executadas simultaneamente ou em seqüência. Assim, por 
+exemplo, a aerofotogrametria de uma sub-região é composta de diversas ações, uma 
+para cada município, e, no entanto, foi concebida para ser executada como um 
+único projeto. As atividades de drenagem, água, esgoto e resíduos sólidos são 
+compostas de uma ação de estudos e projeto básico, seguidas de uma ação de 
+implantação. As atividades relacionam-se aos programas, e não a subprogramas, 
+como as ações, já que em diversos casos elas se compõem de ações pertencentes a 
+subprogramas distintos, como no exemplo anterior. O número de atividades varia 
+do mínimo de 316, quando todos os Centros de Resíduos Plurimunicipais são 
+implantados, a 341, quando todos os municípios implementam seus próprios centros 
+de disposição. A numeração das atividades obedece ao seguinte padrão:</P>
+<P>[Módulo].[Programa].[Nível 0].[Nível 1].[Nível 2]</P>
+<P align=justify>Módulo e Programa correspondem às divisões usuais do Programa 
+de Investimentos. Nível 2, quando existente, corresponde a uma opção física 
+(grau de tratamento de esgoto ou forma de disposição de resíduos sólidos). Nível 
+1, quando existente, corresponde, tratando-se de ações de âmbito municipal, aos 
+municípios e, em alguns casos, a localidades das intervenções. Em alguns outros 
+casos, pode corresponder a etapas de uma intervenção. Nível 0 corresponde, em 
+alguns casos, a uma subdivisão do Programa.</P>
+<P align=justify>O relacionamento entre ações e atividades, incluindo a 
+precedência entre as ações de uma mesma atividade, está expresso em uma tabela 
+específica. A partir dessa tabela é gerada outra com os deslocamentos temporais 
+(<I>offsets</I>) das ações em relação ao início da atividade. Com essa última 
+pode-se produzir o cronograma financeiro de cada uma das atividades e, desse 
+modo, seu custo total e duração.</P>
+<P align=justify>As atividades são programadas em uma tabela de agenda de 
+atividades, atribuindo-se a cada uma um mês de início. A contagem dos meses tem 
+seu mês 1 em janeiro de 1999, que correspondente ao ano anterior ao primeiro ano 
+do horizonte do Programa de Investimentos (ano 0). O ano 1 do Programa, dessa 
+forma, inicia-se no mês 13 (janeiro de 2000).</P>
+<P align=justify>As atividades tiveram sua programação inicial baseada em uma 
+atribuição de prioridades aos programas do Programa de Investimentos, conforme 
+expresso no relatório "Estratégias de Implantação" (PS-RE-076-R0). As 
+atribuições de prioridades dentro de cada programa seguiram critérios de 
+hierarquização por custo-benefício conforme expresso no relatório "Estudos 
+Econômicos para Hierarquização das Intervenções Estruturais" (PS-RE-68-R1) e em 
+<A href="http://www.hidro.ufrj.br/pqarj/geral/saneam/hieresg/texto.htm"><FONT 
+color=#0000ff>Hierarquização das Intervenções em Esgotamento 
+Sanitário</FONT></A>, <A 
+href="http://www.hidro.ufrj.br/pqarj/geral/saneam/hieragua/texto.htm"><FONT 
+color=#0000ff>Hierarquização das Intervenções em Abastecimento de 
+Água</FONT></A>, <A 
+href="http://www.hidro.ufrj.br/pqarj/geral/drenagem/hierdren/texto.htm"><FONT 
+color=#0000ff>Hierarquização das Intervenções em Drenagem Urbana</FONT></A> 
+e<FONT color=#0000ff> <A 
+href="http://www.hidro.ufrj.br/pqarj/geral/residuos/hierres/texto.htm">Hierarquização 
+das Intervenções em Resíduos Sólidos</A></FONT>.</P><B>
+<P align=justify>Fontes de Financiamento</P></B>
+<P align=justify>As possíveis fontes de financiamento (programas de 
+financiamento) são relacionadas em uma tabela, onde constam também as 
+instituições envolvidas. Em tabelas específicas são relacionadas às fontes as 
+características dos tomadores (executores) e das ações executadas: uma das 
+tabelas relaciona as fontes à esfera de governo do possível tomador (PRIVADO, 
+MUNICIPAL, ESTADUAL ou FEDERAL); outra as relaciona ao tipo de produto gerado na 
+ação financiada (ESTUDOS – Estudos e Projetos Básicos, SISTEMAS – 
+Desenvolvimento e Implantação de Sistemas e OBRAS – Implantação de Intervenções 
+Físicas); outra as relaciona ao setor da ação (SANEAMENTO, RESÍDUOS SÓLIDOS, 
+DRENAGEM, REFLORESTAMENTO, POLUIÇÃO INDUSTRIAL e OUTROS); uma última relaciona 
+as fontes à possibilidade de financiamento de investimentos (I) ou Operações 
+(O).</P>
+<P align=justify>Os subprogramas estão classificados em uma tabela por âmbito 
+(BACIA – ações de âmbito geral na bacia; SUB-BACIA – ações referentes a 
+determinadas sub-bacias; LOCAL – ações locais não da esfera municipal; MUNICIPAL 
+– ações da esfera municipal), tipo de produto gerado (mesma classificação das 
+fontes financeiras) e setor (mesma classificação das fontes financeiras). Os 
+executores das ações estão classificados em uma tabela conforme sua esfera 
+governamental (mesma classificação das fontes financeiras).</P>
+<P align=justify>Com as classificações dos subprogramas e executores, mais a 
+classificação da própria ação em investimento e operação, é possível enquadrar 
+cada ação nas mesmas classes das fontes de financiamento e, com isso, ligar cada 
+ação a suas possíveis fontes de financiamento. A classificação, não abrangendo 
+todas as possíveis restrições das fontes financiadoras, não fornece uma ligação 
+perfeita entre as fontes e as ações, mas representa uma indicação das fontes 
+mais adequadas, de muita utilidade para o executor. Uma dessas fontes pode ser 
+escolhida para financiamento da ação, ficando a escolha registrada em tabela 
+específica.</P><B>
+<P>2.2 Funcionalidade</P>
+<P align=justify>Opções Físicas</P></B>
+<P align=justify>O Programa de Investimentos incorporou no desenvolvimento do 
+componente esgotamento sanitário opções físicas de grau de tratamento. No 
+componente resíduos sólidos urbanos foram incorporadas opções de disposição em 
+nível municipal ou em nível plurimunicipal. Não obstante terem sido feitas 
+recomendações quanto à melhor alternativa, a decisão final será tomada quando da 
+implementação do Programa. O Sistema de Planejamento suporta esse nível físico 
+de decisão, permitido que se escolha em cada localidade a forma de tratamento de 
+esgoto (dentre as formas estudadas) e, no caso dos resíduos sólidos, como 
+implementar cada um dos centros plurimunicipais de disposição projetados ou como 
+implementar, nos municípios correspondentes, seu próprio centro de 
+disposição.</P><B>
+<P align=justify>Programação das Atividades</P></B>
+<P align=justify>O Sistema permite que sejam programadas as datas de início de 
+cada uma das atividades que compõem o Programa de Investimentos. Para isso é 
+exibida uma tabela com todas as atividades, classificadas por módulo, programa e 
+prioridade dentro do Programa. Nessa tabela pode ser especificado o mês de 
+início da atividade (o mês 1 corresponde a janeiro de 1999).</P><B>
+<P align=justify>Escolha do Financiador da Ação</P></B>
+<P align=justify>O Sistema permite que seja selecionada, entre os programas de 
+financiamento previamente considerados adequados, a fonte desejada para cada 
+ação. Para tanto, as ações são apresentadas por âmbito, indicando prazo, início 
+programado, custo e financiador selecionado. No caso de ações de âmbito 
+municipal, seleciona-se primeiro o município desejado. Da mesma forma, a ação é 
+apresentada com prazo, início programado, custo, município, localidade e 
+financiador selecionado. Em todos os casos, pode-se optar por alterar o 
+financiador selecionado, sendo então apresentada a lista dos financiadores mais 
+adequados à ação (ver acima <B>Fontes de Financiamento</B>) para a 
+escolha.</P><B>
+<P align=justify>Visualização Geral do Programa</P></B>
+<P align=justify>O Sistema proporciona diferentes formas de visualizar o 
+Programa de Investimentos. A de maior amplitude é a Visão Geral.</P>
+<P align=justify>Nesta forma o Programa é apresentado em todos os seus detalhes 
+numa seqüência de telas. A primeira delas mostra o Programa por âmbito e 
+prioridade.</P>
+<P>Do ponto de vista de âmbito das ações, elas se dividem em quatro categorias, 
+a saber:
+<DIR>
+<DIR><FONT face=Symbol>
+<P>· </FONT>Bacia - são as ações que se referem a todo o espaço físico da bacia 
+do Paraíba do Sul</P><FONT face=Symbol>
+<P>· </FONT>Sub-bacia - são as ações ligadas a sub-bacias correspondentes a um 
+ou mais tributários do Paraíba do Sul</P><FONT face=Symbol>
+<P>· </FONT>Municipal - são as ações de intervenção urbana, afetas aos 
+municípios</P><FONT face=Symbol>
+<P>· </FONT>Local - são as intervenções de caráter pontual, não ligadas aos 
+municípios</P></DIR></DIR>
+<P align=justify>A prioridade, neste caso, refere-se à prioridade relativa entre 
+os diversos programas que compõem o Programa de Investimentos. Para cada 
+combinação âmbito-prioridade é dado o número de ações e o custo total das 
+mesmas. Na tela seguinte são mostrados todos os subprogramas correspondentes à 
+combinação âmbito-prioridade selecionada, com o número total de ações no 
+subprograma e o valor total das mesmas. Na última tela são exibidas todas as 
+ações que compõem o subprograma selecionado, com número, início, duração, custo, 
+entidade executora e uma lista de possíveis financiadores da ação, encabeçada 
+pelo financiador selecionado.</P><B>
+<P align=justify>Visualização por Município</P></B>
+<P align=justify>Do ponto de vista dos municípios, há interesse em obter uma 
+visão setorial do Programa de Investimentos, apresentando com detalhes todas as 
+ações afetas ao município em foco. Esse modo de ver o Programa se chama-se Visão 
+Municipal.</P>
+<P align=justify>A primeira tela da Visão Municipal permite que se selecione o 
+município desejado. Nela são apresentados todos os programas com ações 
+municipais afetas ao município, com o número de ações e o custo total por 
+programa. Nessa tela pode ser pedido um relatório de todas as ações afetas ao 
+município, divididas por programas, com custo, duração e prioridade, além da 
+totalização dos custos por programa e do total geral para o município. A próxima 
+e última tela apresenta as ações correspondentes ao programa selecionado no 
+município, com número, custo, início, duração, entidade executora e localidade, 
+além de uma lista dos possíveis financiadores da ação, encabeçada pelo 
+financiador selecionado. Nessa tela pode também ser pedido um relatório dos 
+possíveis financiadores das ações do município selecionado, contendo, para cada 
+programa de financiamento, uma lista de atividades passíveis de serem 
+financiadas por ele, com custos, prioridade e localidades, além da totalização 
+de custos por fonte.</P><B>
+<P align=justify>Visualização por Financiador</P></B>
+<P align=justify>Uma outra forma de se ver o Programa de Investimentos é a que 
+apresenta, para cada programa de financiamento, o conjunto de ações que ele 
+poderia financiar. A essa forma de ver o Programa de Investimentos chamamos 
+Visão dos Financiadores.</P>
+<P align=justify>A primeira tela dessa visualização apresenta, para cada 
+financiador, o número total de ações que ele poderia financiar e o que ele está 
+programado para financiar, com seu correspondente custo total, além de uma lista 
+dos programas do Programa de Investimentos, com sua prioridade e novamente com o 
+número e custo total de ações financiáveis e programadas para essa fonte. Uma 
+segunda e última tela apresenta os subprogramas do programa selecionado, com o 
+número e custo total das ações financiáveis e efetivamente programadas para o 
+financiador, e a lista das ações financiáveis, com seus detalhes - número da 
+ação, início, duração, custo, executor e localização (município e localidade), 
+além da indicação de se a ação está efetivamente programada para a fonte 
+financeira.</P><B>
+<P align=justify>Gráficos</P></B>
+<P align=justify>O Sistema está programado para apresentar alguns gráficos, 
+indicando os custos do Programa de Investimentos por módulo, programa e 
+financiador selecionado. Além desses gráficos, o Sistema apresenta o cronograma 
+financeiro anual, também por módulo do Programa de Investimentos e financiador 
+selecionado.</P>
+<P>&nbsp;</P><B>
+<P>3. Modo de Uso</P>
+<P>3.1 Início do Programa</P></B>
+<P align=justify>O Sistema de Planejamento de Investimentos é baseado no 
+<I>software</I> <I>Access</I> 97, da Microsoft. Para sua execução, então, é 
+necessário que o <I>Access</I> 97 esteja disponível no computador. A instalação 
+do Sistema é feita pela cópia do arquivo PlanInv.mdb para o diretório desejado. 
+A ativação do Sistema se dá clicando-se duas vezes no arquivo PlanInv.mdb, no 
+Windows Explorer ou através de Meu Computador. Ao ser ativado o Sistema, é 
+exibida a tela correspondente à <B>Figura 1</B>.</P><B>
+<P align=justify><IMG height=469 alt="Figura1.gif (161287 bytes)" 
+src="texto_arquivos/figura1.gif" width=711></P></B>
+<P align=justify><B>Figura 1</B></P>
+<P align=justify>Oito botões estão disponíveis para a seleção das três 
+características programáveis do Programa de Investimentos (opções físicas de 
+tratamento de esgoto e disposição de lixo, programação das atividades e seleção 
+dos financiadores), para a visualização do Programa em formulários sob três 
+diferentes ângulos (pela estrutura geral, por município e por financiador), para 
+a obtenção de gráficos e, finalmente, para a saída do programa.</P>
+<DIR><FONT face=Symbol>
+<P>· </FONT>Opção Física</P><FONT face=Symbol>
+<P>· </FONT>Programação da Atividade</P><FONT face=Symbol>
+<P>· </FONT>Escolha do Financiador</P><FONT face=Symbol>
+<P>· </FONT>Visão Geral</P><FONT face=Symbol>
+<P>· </FONT>Visão Municipal</P><FONT face=Symbol>
+<P>· </FONT>Visão dos Financiadores</P><FONT face=Symbol>
+<P>· </FONT>Gráficos</P><FONT face=Symbol>
+<P>· </FONT>Saída do Programa</P></DIR><B>
+<P>3.2 Programação das Opções Físicas</P></B>
+<P>Ao acionar o botão <B>Opção Física,</B> é apresentado o formulário <B>Opções 
+Físicas</B>, com dois botões:
+<DIR><FONT face=Symbol>
+<P>· </FONT>Opções de Tratamento de Esgoto</P><FONT face=Symbol>
+<P>· </FONT>Opções de Disposição de Resíduos Sólidos</P></DIR>
+<P align=justify>O botão <B>Opções de Tratamento de Esgoto </B>permite a escolha 
+do nível de tratamento de esgoto (tratamento primário, secundário ou terciário) 
+em cada uma das localidades, dentro das opções incluídas no Programa de 
+Investimentos. Ao ser acionado esse botão, é apresentada a tela <B>Opções de 
+Tratamento de Esgoto</B> (<B>Figura 2)</B>.</P><FONT size=2>
+<P align=justify><IMG height=487 alt="Figura2.gif (22546 bytes)" 
+src="texto_arquivos/figura2.gif" width=783></P></FONT><B>
+<P align=justify>Figura 2</P></B>
+<P align=justify>Através deste formulário pode-se verificar e alterar o nível de 
+tratamento de esgoto especificado para cada localidade com projeto de 
+esgotamento sanitário no Programa de Investimentos. As setas para a direita e 
+para a esquerda permitem passar de uma localidade à outra (as localidades estão 
+dispostas por ordem na bacia, de montante para jusante). Para mudar o nível de 
+tratamento basta clicar no botão correspondente. Em diversos casos o botão de 
+tratamento terciário está desativado (acinzentado). Isto significa que não foi 
+previsto tratamento terciário para a localidade em questão.</P>
+<P align=justify>Ao se clicar no botão <B>Incorpora,</B> todas as alterações 
+executadas serão refletidas no Programa de Investimentos. Clicando-se o botão 
+<B>Cancela</B>, as alterações executadas são canceladas. Em ambos os casos, 
+volta-se à tela anterior.</P>
+<P align=justify>O botão <B>Opções de Disposição de Resíduos Sólidos</B> permite 
+que se opte pela incorporação ou não de cada um dos Centros de Resíduos 
+Plurimunicipais (CRPs) projetados. Naturalmente, ao se optar pela incorporação 
+de um CRP, eliminam-se os Centros de Resíduos Municipais (CRM) dos municípios 
+correspondentes e vice-versa. Ao acionar o botão é apresentada a tela <B>Opções 
+de Centros Plurimunicipais de Resíduos</B> (<B>Figura 3)</B>. </P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=541 alt="Figura3.gif (51925 bytes)" 
+src="texto_arquivos/figura3.gif" width=799></P></FONT><B>
+<P align=justify>Figura 3 </P></B>
+<P align=justify>Através dessa tela pode-se verificar e alterar a situação 
+prevista de incorporação ou não de cada CRP ao Programa de Investimentos. As 
+setas para a direita e para a esquerda permitem passar de um CRP ao outro (os 
+CRPs estão dispostos por ordem na bacia, de montante para jusante). Para mudar a 
+opção basta clicar no botão correspondente.</P>
+<P align=justify>Ao se clicar no botão <B>Incorpora,</B> todas as alterações 
+executadas serão refletidas no Programa de Investimentos. Clicando-se o botão 
+<B>Cancela</B>, as alterações executadas são canceladas. Em ambos os casos, 
+volta-se à tela anterior.</P>
+<P>Ao se clicar no botão com a porta, volta-se à tela inicial do Sistema.</P><B>
+<P>3.3 Programação das Atividades</P></B>
+<P align=justify>As atividades, conforme já exposto, representam a unidade 
+mínima que pode ser realocada dentro do Programa de Investimentos, e sua 
+programação temporal é a alocação do início de cada uma delas dentro dos 
+critérios de prioridade determinados. No Programa de Investimentos foram feitas 
+duas priorizações. A primeira envolveu a determinação das prioridades relativas 
+de cada programa individual dentro do Programa de Investimentos como um todo. A 
+segunda foi a determinação das prioridades relativas das atividades dentro de 
+cada programa, e para isso foram usados normalmente critérios de relação 
+custo-benefício.</P>
+<P align=justify>Ao acionar o botão <B>Programação da Atividade,</B> é exibida a 
+tela <B>Programação de Atividades</B> (<B>Figura 4</B>), que apresenta todas as 
+atividades do Programa, ordenadas por programa (segundo algarismo na numeração 
+da atividade ou da ação) e por prioridade dentro do Programa, valores estes 
+exibidos nos campos <B>Prioridade do Programa</B> e <B>Prioridade no 
+Programa</B>. A programação vigente é exibida no campo <B>Mês</B>. A programação 
+temporal pode ser alterada digitando-se com o valor desejado nesta caixa de 
+texto. O mês de referência nesta contagem de tempo (mês 1) é janeiro de 1999, no 
+ano de preparação (ano 0) do Programa. Dessa forma o ano 1, que representa o 
+início real do Programa, é o que começa no mês 13.</P>
+<P align=justify>Pode-se ir de uma atividade a outra usando-se as setas para a 
+esquerda e para a direita. Uma maneira de fazer deslocamentos maiores é usando a 
+barra de deslocamento vertical da tela, localizada a sua direita.</P>
+<P align=justify>Ao final da programação, pode-se acionar o botão 
+<B>Implementar</B>, que faz com que as novas programações sejam ativadas, ou 
+<B>Cancelar</B>, que reverte as programações à situação anterior. Em ambos os 
+casos, volta-se à tela inicial.</P>
+<P>&nbsp;</P><FONT size=2>
+<P><IMG height=491 alt="Figura4.gif (101684 bytes)" 
+src="texto_arquivos/figura4.gif" width=799></P></FONT><B>
+<P>Figura 4</P>
+<P>3.4 Escolha do Financiador</P></B>
+<P align=justify>O Botão <B>Escolha do Financiador</B> permite que seja 
+selecionada a fonte de financiamento de cada uma das ações do Programa, entre as 
+fontes consideradas adequadas para o tipo da ação em questão (ver <B>Fontes de 
+Financiamento</B>, em <B>2.1</B>). Ao ser acionado esse botão, é exibida a tela 
+<B>Financiamento das Ações</B>, com quatro botões, a saber:</P>
+<DIR><FONT face=Symbol>
+<P>· </FONT>Ações de Bacia</P><FONT face=Symbol>
+<P>· </FONT>Ações de Sub-Bacias</P><FONT face=Symbol>
+<P>· </FONT>Ações Municipais</P><FONT face=Symbol>
+<P>· </FONT>Ações Locais</P></DIR>
+<P align=justify>Através deles pode-se escolher os financiadores para cada um 
+dos tipos de ação (ver discussão sobre âmbito em <B>Fontes de Financiamento</B>, 
+em <B>2.1</B>).</P>
+<P align=justify>A operação de atribuir financiadores às ações de âmbito de 
+bacia, de sub-bacias ou locais é idêntica e será exemplificada pelo caso das 
+ações de bacia. Ao acionar o botão <B>Ações de Bacia</B>, é apresentada a tela 
+<B>Ações de Âmbito da Bacia</B> (<B>Figura 5)</B>. Navegando-se com as setas à 
+direita e à esquerda, pode-se ver todas as ações de âmbito de bacia, cujo número 
+aparece no indicador de registros no canto inferior esquerdo da tela. Para cada 
+uma delas é indicado um número, o mês de início programado (decorrente da 
+programação da atividade correspondente), sua duração e custo, além da 
+instituição e do programa de financiamento previsto para ela.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=491 alt="Figura5.gif (30597 bytes)" 
+src="texto_arquivos/figura5.gif" width=799></P></FONT><B>
+<P align=justify>Figura 5 </P></B>
+<P align=justify>Caso se deseje alterar o financiador programado, deve-se 
+acionar o botão <B>Novo Financiador</B>, sendo então apresentada a tela da 
+<B>Figura 6</B>. Nela podem ser vistas todas as instituições e programas de 
+financiamento considerados adequados à ação em questão. Pode-se navegar entre 
+todos os programas de financiamento (o número deles é indicado no canto inferior 
+esquerdo da tela) através dos botões com as setas à esquerda e à direita, 
+observando-se a seta na área cinza à esquerda, que aponta o financiador 
+selecionado. Alternativamente, pode-se usar a barra de deslocamento vertical, no 
+lado direito da tela, e clicar diretamente na parte cinza à esquerda do 
+financiador. Uma vez selecionado um programa, pode-se fazer com que ele seja o 
+novo financiador da ação acionando o botão <B>Selecionar</B>. Caso se acione o 
+botão <B>Cancelar</B>, mantém-se o financiador original. Em ambos os casos, 
+volta-se à tela anterior (que mostrará o novo financiador, se pertinente).</P>
+<P align=justify>Ao acionar o botão com a porta de saída, volta-se à tela 
+anterior, de seleção do âmbito da ação.</P><B>
+<P align=justify>&nbsp;</P></B><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura6.gif (126893 bytes)" 
+src="texto_arquivos/figura6.gif" width=799></P></FONT><B>
+<P align=justify>Figura 6 </P></B>
+<P align=justify>A operação de seleção do financiador de âmbito municipal é 
+semelhante. Ao acionar o botão <B>Ações Municipais</B>, é exibida a tela 
+<B>Municípios na Bacia</B> (<B>Figura 7)</B>. Clicando-se na caixa-cortina, 
+aparece uma lista de municípios. Clicando-se no município desejado e em seguida 
+na tecla com o formulário, é apresentada a tela da <B>Figura 8</B> (<B>Ações de 
+Âmbito Municipal</B>). Nela, de modo semelhante ao da tela das Ações de Âmbito 
+de Bacia, são apresentadas todas as ações municipais correspondentes ao 
+município selecionado. Além do número, início, duração, custo, instituição e 
+programa de financiamento, são exibidos, para cada ação, a localidade (quando 
+for o caso) e o município correspondente.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura7.gif (13642 bytes)" 
+src="texto_arquivos/figura7.gif" width=797></P></FONT><B>
+<P align=justify>Figura 7 </P></B>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura8.gif (48025 bytes)" 
+src="texto_arquivos/figura8.gif" width=799></P></FONT><B>
+<P align=justify>Figura 8</P></B>
+<P align=justify>O processo de alteração do financiador programado é idêntico, 
+nas ações municipais, ao do das demais ações, descrito acima.</P>
+<P align=justify>Ao acionar o botão com a porta de saída, volta-se à tela 
+anterior, de seleção do município. Acionando-se nesta o botão com a porta de 
+saída, volta-se à tela de escolha do âmbito da ação. Acionando-se nesta última a 
+porta de saída, volta-se à tela inicial do Sistema.</P><B>
+<P>3.5 Visão Geral do Programa</P></B>
+<P align=justify>O botão <B>Visão Geral</B> permite a visão do Programa de 
+Investimentos através de sua estrutura formal de módulos, programas, 
+subprogramas e ações, em todos os detalhes. Ao acionar o botão, é exibida a tela 
+da <B>Figura 9</B> (<B>Ações por Âmbito e Prioridade</B>).</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura9.gif (64967 bytes)" 
+src="texto_arquivos/figura9.gif" width=799></P></FONT><B>
+<P align=justify>Figura 9 </P></B>
+<P align=justify>Para uma primeira visão o Programa de Investimentos foi 
+dividido por âmbito dos subprogramas e prioridade dos programas. Para cada 
+combinação âmbito-prioridade é apresentado o número de ações e seu valor total. 
+No alto da tela é apresentado um resumo do Programa com o número de ações que o 
+compõem, bem como o custo total das mesmas. A combinação desejada é selecionada 
+através das setas à esquerda e à direita. A combinação selecionada é apontada 
+pela seta na região cinza à esquerda da mesma. Pode-se também percorrer o 
+conjunto de opções, usando a barra de deslocamento vertical à direita da tela, e 
+selecionar a combinação desejada, clicando na área cinza do lado esquerdo da 
+mesma.</P>
+<P align=justify>Clicando-se o botão com o formulário é apresentada a tela 
+<B>Subprogramas</B> (<B>Figura 10)</B>, com maiores detalhes do Programa 
+referentes à combinação âmbito-prioridade selecionada. No topo da tela são 
+reapresentadas as informações de âmbito e prioridade, bem como o número de ações 
+nesta combinação e seu custo total.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=517 alt="Figura10.gif (114826 bytes)" 
+src="texto_arquivos/figura10.gif" width=799></P></FONT><B></B>
+<P align=justify><B>Figura 10</B></P>
+<P align=justify>Na parte inferior da tela são apresentados todos os 
+subprogramas (nome do subprograma e do programa ao qual pertence) 
+correspondentes à combinação âmbito-prioridade selecionada, com o número de 
+ações que o compõem e seu custo. O subprograma desejado é escolhido através das 
+setas à esquerda e à direita. O subprograma selecionado é apontado pela seta na 
+região cinza à esquerda do mesmo. Pode-se também percorrer o conjunto de 
+subprogramas, usando a barra de deslocamento vertical à direita da tela, e 
+selecionar um deles, clicando na área cinza do lado esquerdo do mesmo.</P>
+<P align=justify>Clicando-se o botão com o formulário é apresentada a tela 
+<B>Ações</B> (<B>Figura 11)</B>, com informações sobre cada uma das ações do 
+subprograma selecionado. No topo da tela aparecem as informações do Programa com 
+sua prioridade, do subprograma e do número de ações e valor total do mesmo.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=523 alt="Figura11.gif (91143 bytes)" 
+src="texto_arquivos/figura11.gif" width=799></P></FONT><B>
+<P align=justify>Figura 11</P></B>
+<P align=justify>No corpo da tela são apresentadas as ações. Para cada uma delas 
+é indicado número, custo, mês de início programado, duração em meses, entidade 
+executora e localização (localidade e município), quando for o caso. Na parte 
+inferior do quadro são mostrados os possíveis financiadores da ação, com a 
+indicação do financiador selecionado.</P>
+<P align=justify>O número de ações também aparece no canto inferior esquerdo da 
+tela. Para a navegação entre as diferentes ações usam-se os botões com seta à 
+direita e à esquerda na parte inferior do formulário. O número de possíveis 
+financiadores da ação aparece no indicador no canto inferior esquerdo do quadro 
+com os financiadores. As setas à esquerda e à direita, assim como a barra de 
+deslocamento vertical, no quadro de financiadores, permitem a navegação entre 
+eles. O possível financiador está caracterizado pelo nome da instituição e do 
+programa de financiamento. O financiador escolhido é o que está marcado com 
+<I>x</I> no campo <B>Escolhido</B>.</P>
+<P align=justify>Usando-se os botões com a porta de saída, retorna-se às telas 
+anteriores, até se chegar à tela inicial do Sistema.</P><B>
+<P>3.6 Visão do Programa por Município</P></B>
+<P align=justify>O botão <B>Visão Municipal</B> permite a visão por município do 
+Programa de Investimentos. Os subprogramas apresentados, naturalmente, serão 
+apenas os de âmbito municipal. Ao acionar o botão, é exibida a tela da <B>Figura 
+12</B> (<B>Programas Municipais</B>).</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura12.gif (74066 bytes)" 
+src="texto_arquivos/figura12.gif" width=799></P></FONT><B>
+<P align=justify>Figura 12</P></B>
+<P align=justify>Nela se pode ver, para cada município da bacia, os programas 
+que lhe correspondem. Em sua parte superior, além do nome do município, são 
+exibidos o número e o custo das ações a ele relacionadas. Em seu corpo aparece 
+uma caixa com todos os programas com ações no município, sendo informados, para 
+cada um, o número total e custo das ações. Os municípios estão dispostos em 
+ordem alfabética, e o acesso a eles é feito pelas setas à direita e à esquerda 
+na parte inferior da tela. O indicador, no canto inferior esquerdo da tela, 
+mostra o número total de municípios e o do município em exibição.</P>
+<P align=justify>Junto aos botões de seleção de municípios encontra-se um botão 
+de relatório. Ao ser acionado, é gerado um relatório para o município 
+selecionado, contendo todos os programas do Programa de Investimentos que lhe 
+correspondem, com suas ações. Para cada ação é dado seu número, localidade, 
+início, duração e custo. É também informado o custo total de cada programa no 
+município, com sua participação percentual no total, e o custo total do conjunto 
+de ações no município. Esse relatório pode ser visualizado em detalhe e impresso 
+(ver exemplo no <B>Anexo 1</B>).</P>
+<P align=justify>A seleção do programa pode ser feita pelas setas à esquerda e à 
+direita, dentro do quadro dos programas, ou pela barra de deslocamento vertical, 
+clicando-se diretamente na parte cinza à esquerda do programa desejado. A seta 
+nessa região indica que o programa está selecionado.</P>
+<P align=justify>Para ver suas ações deve-se apertar o botão formulário, sendo 
+então exibida a tela <B>Ações do Programa Municipal</B>, correspondente à<B> 
+Figura 13</B>. Na parte superior da tela é informado o município, programa e sua 
+prioridade, número de ações e custo total. No corpo da tela são apresentadas as 
+ações. Para cada uma aparece o número, localidade, custo, mês de início 
+programado, duração em meses e entidade executora. Na parte inferior do quadro 
+são mostrados os possíveis financiadores da ação, com a indicação do financiador 
+selecionado.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura13.gif (87805 bytes)" 
+src="texto_arquivos/figura13.gif" width=799></P></FONT><B>
+<P align=justify>Figura 13</P></B>
+<P align=justify>O número de ações é também indicado no canto inferior esquerdo 
+da tela. Para a navegação entre as diferentes ações usam-se os botões com seta à 
+direita e à esquerda na parte inferior do formulário. O número de possíveis 
+financiadores da ação aparece no indicador, no canto inferior esquerdo do quadro 
+com os financiadores. As setas à esquerda e à direita, assim como a barra de 
+deslocamento vertical, no quadro de financiadores, permitem a navegação entre 
+eles. O possível financiador está caracterizado pelo nome da instituição e do 
+programa de financiamento. O financiador escolhido é o que está marcado com 
+<I>x</I> no campo <B>Escolhido</B>.</P>
+<P align=justify>Junto aos botões de seleção de ações encontra-se um botão de 
+relatório. Ao ser acionado, é gerado um relatório de possíveis financiadores das 
+ações do município selecionado, contendo, para cada possível financiador, as 
+ações que ele poderia financiar, com seu custo total. Para cada ação é dado seu 
+número, prioridade do programa onde ela se insere, localidade e custo. Um 
+asterisco, logo antes do custo da ação, informa se ela está programada para ser 
+financiada pela fonte em questão. Esse relatório pode ser visualizado em detalhe 
+e impresso (ver exemplo no<B> Anexo 2</B>).</P>
+<P align=justify>Usando-se os botões com a porta de saída, retorna-se às telas 
+anteriores, até se chegar à tela inicial do Sistema.</P><B>
+<P>3.7 Visão do Programa pelos Financiadores</P></B>
+<P align=justify>O botão <B>Visão dos Financiadores</B> permite observar o 
+Programa por suas possibilidades de financiamento. O princípio básico das 
+possibilidades de financiamento é a da adequação das ações aos programas de 
+financiamento, conforme explicado no <B>Parágrafo 2.1</B>, em <B>Fontes de 
+Financiamento</B>. Ao se acionar o botão, é exibida a tela <B>Fontes de 
+Financiamento e Programas Financiáveis</B> (<B>Figura 14)</B>.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura14.gif (87766 bytes)" 
+src="texto_arquivos/figura14.gif" width=797></P></FONT><B>
+<P align=justify>Figura 14</P></B>
+<P align=justify>Nessa tela pode-se ver, para cada possível financiador, os 
+programas do Programa de Investimentos que ele poderia financiar. No topo da 
+tela aparece o nome da instituição e do programa de financiamento, com o número 
+de ações que poderia financiar e as que efetivamente já financia (programado 
+como financiador), com seus valores. No corpo da tela há um quadro com os 
+programas que poderiam ser financiados pela fonte. Para cada um deles, além da 
+prioridade, é mostrado o número e o custo das ações financiáveis e das 
+efetivamente financiadas.</P>
+<P align=justify>O acesso aos diferentes financiadores é feito pelas setas à 
+direita e à esquerda, na parte inferior da tela. O indicador, no canto inferior 
+esquerdo da tela, mostra o número total de financiadores e o do financiador em 
+exibição. O programa (do Programa de Investimentos) desejado é escolhido através 
+das setas à esquerda e à direita, na parte inferior do quadro com os programas. 
+O indicador, no canto inferior esquerdo do quadro, mostra o número de programas 
+e o do programa selecionado, que é apontado pela seta na região cinza a sua 
+esquerda. Pode-se também percorrer o conjunto de programas, usando a barra de 
+deslocamento vertical à direita do quadro, e selecionar um deles, clicando na 
+área cinza do lado esquerdo do mesmo.</P>
+<P align=justify>Acionando-se o botão com o formulário, dentro do quadro de 
+programas, é exibida a tela <B>Subprogramas e Ações</B> (<B>Figura 15)</B>. Nela 
+podem ser vistos os subprogramas e as ações do programa selecionado na tela 
+anterior. No topo da tela são mostrados a instituição e o programa de 
+financiamento, o programa (de investimento), sua prioridade e o número e custo 
+das ações dentro do programa, financiáveis e efetivamente financiadas pela fonte 
+financeira. No corpo da tela podem ser selecionados, através das setas à 
+esquerda e à direita, os subprogramas do Programa de Investimentos. Seu número 
+total, assim como o número do subprograma selecionado, pode ser visto no 
+indicador, na parte inferior da tela.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=521 alt="Figura15.gif (71461 bytes)" 
+src="texto_arquivos/figura15.gif" width=797></P></FONT><B>
+<P align=justify>Figura 15</P></B>
+<P align=justify>Juntamente com o nome do subprograma são indicados o número e 
+custo de suas ações financiáveis e efetivamente financiadas pela fonte 
+financeira escolhida. Em um quadro exibido abaixo dessas informações podem ser 
+vistas as ações financiáveis do subprograma. Para percorrê-las pode-se usar as 
+setas à esquerda e à direita do quadro. O número das ações e da ação selecionada 
+está exibido em seu canto inferior esquerdo.</P>
+<P align=justify>Para cada ação é informado seu número, localidade e município 
+(quando cabível), seu início programado e duração, custo e executor. Um <I>x</I> 
+na caixa <B>Financiada</B> indica que a ação está efetivamente programada para 
+ser financiada pela fonte em questão.</P>
+<P align=justify>Usando-se os botões com a porta de saída, retorna-se às telas 
+anteriores, até se chegar à tela inicial do Sistema.</P><B>
+<P>3.8 Gráficos</P></B>
+<P>Através do botão <B>Gráficos</B> podem ser vistas três visões não-temporais 
+do Programa de Investimentos e três cronogramas financeiros. Ao ser acionado o 
+botão, é exibida a tela Gráficos, com seis botões, a saber:
+<DIR><FONT face=Symbol>
+<P>· </FONT>Custos por Módulo</P><FONT face=Symbol>
+<P>· </FONT>Custos por Programa</P><FONT face=Symbol>
+<P>· </FONT>Financiamento por Fonte</P><FONT face=Symbol>
+<P>· </FONT>Cronograma Financeiro Anual</P><FONT face=Symbol>
+<P>· </FONT>Cronograma Financeiro por Fonte</P><FONT face=Symbol>
+<P>· </FONT>Cronograma Financeiro por Módulo</P></DIR>
+<P align=justify>Ao ser acionado o botão <B>Custos por Módulo</B>, é exibido o 
+gráfico correspondente (<B>Figura 16)</B>.</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura16.gif (20735 bytes)" 
+src="texto_arquivos/figura16.gif" width=799></P></FONT><B>
+<P align=justify>Figura 16</P></B>
+<P align=justify>Ao ser acionado o botão <B>Custos por Programa</B>, é exibido o 
+gráfico mostrado na <B>Figura 17</B>, onde aparece a divisão do Programa de 
+Investimentos por programas. Os programas de Planejamento, Gerenciamento, 
+Assistência Técnica e Recuperação do Reservatório de Funil, por serem de menor 
+valor, foram fundidos em uma só classificação (Planejamento e Outros).</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=495 alt="Figura17.gif (23972 bytes)" 
+src="texto_arquivos/figura17.gif" width=799></P></FONT><B></B>
+<P><B>Figura 17</B></P>
+<P>Ao ser acionado o botão <B>Financiamento por Fonte</B>, é exibido o gráfico 
+com a distribuição entre os recursos planejados para cada financiador (<B>Figura 
+18</B>).</P>
+<P>&nbsp;</P><FONT size=2>
+<P><IMG height=493 alt="Figura18.gif (14628 bytes)" 
+src="texto_arquivos/figura18.gif" width=797></P></FONT><B></B>
+<P align=justify><B>Figura 18</B></P>
+<P align=justify>O botão <B>Cronograma Financeiro Anual</B> permite observar a 
+distribuição dos recursos do Programa ao longo de seu período de 
+desenvolvimento, em função da agenda de atividades estabelecida (<B>Figura 
+19</B>). O ano 0 do Programa é o de preparação do Programa de Investimentos 
+(1999). O início efetivo do Programa de Investimentos se dá no ano 1 (2000).</P>
+<P align=justify>&nbsp;</P><FONT size=2>
+<P align=justify><IMG height=493 alt="Figura19.gif (24574 bytes)" 
+src="texto_arquivos/figura19.gif" width=799></P></FONT><B>
+<P align=justify>Figura 19</P></B>
+<P>O botão <B>Cronograma Financeiro por Fonte</B> permite ver o cronograma 
+financeiro para cada uma das fontes de financiamento planejadas (<B>Figura 
+20</B>).</P>
+<P>&nbsp;</P><FONT size=2>
+<P><IMG height=493 alt="Figura20.gif (17095 bytes)" 
+src="texto_arquivos/figura20.gif" width=799></P></FONT><B>
+<P>Figura 20</P></B>
+<P>O botão <B>Cronograma Financeiro por Módulo</B> permite observar o desembolso 
+em cada um dos módulos do Programa de Investimentos ao longo do tempo (<B>Figura 
+21</B>).</P>
+<P>&nbsp;</P><FONT size=2>
+<P><IMG height=495 alt="Figura21.gif (21592 bytes)" 
+src="texto_arquivos/figura21.gif" width=797></P></FONT><B>
+<P>Figura 21</P></B><FONT size=2></FONT></BODY></HTML>

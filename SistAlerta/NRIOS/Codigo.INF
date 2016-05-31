@@ -1,0 +1,3 @@
+[dbase]
+MDX=Codigo.MDX
+UIDX=PRIMARYKEY
